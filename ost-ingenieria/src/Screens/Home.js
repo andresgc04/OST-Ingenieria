@@ -2,6 +2,7 @@ import React, { Component, useState } from 'react';
 import { Navbar, NavDropdown, Nav, Button, Carousel, CardDeck, Card } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
+import { SocialIcon } from 'react-social-icons';
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -260,7 +261,7 @@ class Home extends Component {
         <footer className="bg-dark text-white py-4">
           <div className="container">
             <nav className="row">
-              <a href="#" className="col-md-3 text-reset text-uppercase d-flex align-items-center">
+              <a href="Home" className="col-md-3 text-reset text-uppercase d-flex align-items-center">
                 <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" alt="Logo OST Ingenieria" className="img-logo mr-2" />
               </a>
               <ul className="col-md-3 list-unstyled">
@@ -283,11 +284,11 @@ class Home extends Component {
 
               <ul className="col-md-3 list-unstyled">
                 <li className="font-weight-bold text-uppercase">Redes Sociales</li>
-                <li className="d-flex justify-content-between">
-                  <a href="#" className="text-reset">Link 1</a>
-                  <a href="#" className="text-reset">Link 1</a>
-                  <a href="#" className="text-reset">Link 1</a>
-                  <a href="#" className="text-reset">Link 1</a>
+                <li className="d-flex justify-content-between mt-2">
+                  <a href="#" className="text-reset"><SocialIcon url="https://www.facebook.com/AndresGc1997/" /></a>
+                  <a href="#" className="text-reset"><SocialIcon url="https://www.instagram.com/andresgc07/" /></a>
+                  <a href="#" className="text-reset"><SocialIcon url="https://twitter.com/jaketrent" /></a>
+                  <a href="#" className="text-reset"><SocialIcon url="https://www.linkedin.com/in/andr%C3%A9s-eugenio-guerrero-cordero-a5a671121/" /></a>
                 </li>
               </ul>
 
