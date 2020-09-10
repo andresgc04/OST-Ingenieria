@@ -1,12 +1,7 @@
 import React, { Component, useState } from 'react';
-import { Navbar, NavDropdown, Nav, Form, FormControl, Button, Carousel, CardDeck, Card } from 'react-bootstrap';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import MenuIcon from '@material-ui/icons/Menu';
-import classes from '@material-ui/icons/Class'
-import { red } from '@material-ui/core/colors';
+import { Navbar, NavDropdown, Nav, Button, Carousel, CardDeck, Card } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -67,10 +62,11 @@ class Home extends Component {
             <Navbar.Brand href="#home">OST Ingenieria</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
+              <Nav className="ml-auto">
                 <Nav.Link href="#home">Inicio</Nav.Link>
                 <Nav.Link href="#link">Trayectoria</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <Nav.Link href="#link">Trayectoria</Nav.Link>
+                <NavDropdown className="y-4" title="Dropdown" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -78,10 +74,6 @@ class Home extends Component {
                   <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
-              <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-success">Search</Button>
-              </Form>
             </Navbar.Collapse>
           </Navbar>
         </div>
@@ -90,94 +82,221 @@ class Home extends Component {
           <ControlledCarousel />
         </div>
 
-        <section style={{ background: "white", border: 100 }}>
-          <div style={{ marginRight: '20px' }}>
-            <h1 style={{ marginRight: 20 }}>Servicios</h1>
+        <section style={{ background: 'white' }}>
+          <div className="container mt-5">
+            <div className="row">
+              <Fade left>
+                <div className="col-md-6 my-auto">
+                  <h1 className="display-4">
+                    Sobre Nosotros
+            </h1>
+
+                  <p className="mt-5 ml-2" style={{ fontSize: 20, textAlign: 'justify' }}>
+                    Somos una oficina de servicios técnicos e ingeniería que cuenta con un equipo multidisciplinario de técnicos e ingenieros de excelentes capacitaciones que están siempre dispuestos a ofrecerle las soluciones más factibles para su actividad productiva,
+                    con la aplicación de técnicas experimentadas y de buenas práctica que aseguren que cada uno de nuestros servicios aportan al desarrollo sostenible de su empresa o proyectos.
+            </p>
+                </div>
+              </Fade>
+
+              <Fade right>
+                <div className="col-md-6">
+                  <div className="content-right">
+                    <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" style={{ width: '80%' }} />
+                  </div>
+                </div>
+              </Fade>
+            </div>
           </div>
 
 
-          <CardDeck style={{ padding: 50 }}>
-            <Card>
-              <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
-              <Card.Body>
-                <Card.Title>Gestion de Proyectos</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="https://2.bp.blogspot.com/-6_KCeieik6k/Wt_henJOfxI/AAAAAAAAB_Q/9MkZKZ_kDAsKak9EDmOlo1pOw5UjwjEHwCLcBGAs/s750/Mantenimiento_Industrial.jpg" />
-              <Card.Body>
-                <Card.Title>Mantenimiento Industrial</Card.Title>
-                <Card.Text>
-                  This card has supporting text below as a natural lead-in to additional
-        content.{' '}
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>Mantenimiento Industrial</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This card has even longer content than the first to
-                  show that equal height action.
-              </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
-              <Card.Body>
-                <Card.Title>Gestion de Proyectos</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.
-               </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
-              <Card.Body>
-                <Card.Title>Gestion de Proyectos</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.
-      </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
-              <Card.Body>
-                <Card.Title>Gestion de Proyectos</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.
-      </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-          </CardDeck>
         </section>
+
+        <section style={{ background: '#424242' }}>
+          <div className="container p-4">
+            <Fade left>
+              <div className="d-flex justify-content-center" style={{}}>
+                <h1 className="display-4 mt-5" style={{ color: 'white' }}>Nuestros Servicios</h1>
+              </div>
+            </Fade>
+            <Fade right>
+              <div className="mt-5">
+                <CardDeck style={{ borderColor: '' }}>
+                  <Card>
+                    <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
+                    <Card.Body>
+                      <Card.Title>Gestion de Proyectos</Card.Title>
+                      <Card.Text>
+                        This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.
+                </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                    <Card.Footer>
+                      <small className="text-muted">Last updated 3 mins ago</small>
+                    </Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img variant="top" src="https://2.bp.blogspot.com/-_jyk_a-L8H8/Wc1YV7mGzVI/AAAAAAAAC4w/ZmRwb9_DoTIKcmNhclP2adHylNMi3mrjgCLcBGAs/s750/instalaciones_electricas.jpg" />
+                    <Card.Body>
+                      <Card.Title>Instalaciones Eléctricas</Card.Title>
+                      <Card.Text>
+                        This card has supporting text below as a natural lead-in to additional
+        content.{' '}
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                    <Card.Footer>
+                      <small className="text-muted">Last updated 3 mins ago</small>
+                    </Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img variant="top" src="https://2.bp.blogspot.com/-6_KCeieik6k/Wt_henJOfxI/AAAAAAAAB_Q/9MkZKZ_kDAsKak9EDmOlo1pOw5UjwjEHwCLcBGAs/s750/Mantenimiento_Industrial.jpg" />
+                    <Card.Body>
+                      <Card.Title>Instalaciones Mecánicas</Card.Title>
+                      <Card.Text>
+                        This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to
+                        show that equal height action.
+              </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                    <Card.Footer>
+                      <small className="text-muted">Last updated 3 mins ago</small>
+                    </Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img variant="top" src="https://www.usm.cl/assets/img/carreras/fotos/concepcion-tecnico-universitario-en-automatizacion-y-control.w700.jpg" style={{ height: '29.5%' }} />
+                    <Card.Body>
+                      <Card.Title>Instrumentación & Control</Card.Title>
+                      <Card.Text>
+                        This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.
+               </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                    <Card.Footer>
+                      <small className="text-muted">Last updated 3 mins ago</small>
+                    </Card.Footer>
+                  </Card>
+                </CardDeck>
+              </div>
+            </Fade>
+
+            <Fade left>
+              <div className="mt-5 ">
+                <CardDeck>
+                  <Card>
+                    <Card.Img variant="top" src="https://www.tecnoseguro.com/media/k2/items/cache/60959e8d8c34f5c00b9627dfd768f462_L.jpg" style={{ height: '32%' }} />
+                    <Card.Body>
+                      <Card.Title>Sistemas Detección de Incendios</Card.Title>
+                      <Card.Text>
+                        This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.
+                </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                    <Card.Footer>
+                      <small className="text-muted">Last updated 3 mins ago</small>
+                    </Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img variant="top" src="https://2.bp.blogspot.com/-6_KCeieik6k/Wt_henJOfxI/AAAAAAAAB_Q/9MkZKZ_kDAsKak9EDmOlo1pOw5UjwjEHwCLcBGAs/s750/Mantenimiento_Industrial.jpg" />
+                    <Card.Body>
+                      <Card.Title>Mantenimiento Industrial & Refrigeración</Card.Title>
+                      <Card.Text>
+                        This card has supporting text below as a natural lead-in to additional
+        content.{' '}
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                    <Card.Footer>
+                      <small className="text-muted">Last updated 3 mins ago</small>
+                    </Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card.Body>
+                      <Card.Title>Mantenimiento Industrial</Card.Title>
+                      <Card.Text>
+                        This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to
+                        show that equal height action.
+              </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                    <Card.Footer>
+                      <small className="text-muted">Last updated 3 mins ago</small>
+                    </Card.Footer>
+                  </Card>
+                  <Card>
+                    <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
+                    <Card.Body>
+                      <Card.Title>Gestion de Proyectos</Card.Title>
+                      <Card.Text>
+                        This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.
+               </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                    <Card.Footer>
+                      <small className="text-muted">Last updated 3 mins ago</small>
+                    </Card.Footer>
+                  </Card>
+                </CardDeck>
+              </div>
+            </Fade>
+          </div>
+        </section>
+
+        <section style={{ background: 'white' }}>
+          <div className="container mt-5">
+            <div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <footer className="bg-dark text-white py-4">
+          <div className="container">
+            <nav className="row">
+              <a href="#" className="col-md-3 text-reset text-uppercase d-flex align-items-center">
+                <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" alt="Logo OST Ingenieria" className="img-logo mr-2" />
+              </a>
+              <ul className="col-md-3 list-unstyled">
+                <li className="font-weight-bold text-uppercase">Resource</li>
+                <li><a href="#" className="text-reset">Link 1</a></li>
+                <li><a href="#" className="text-reset">Link 2</a></li>
+                <li><a href="#" className="text-reset">Link 3</a></li>
+                <li><a href="#" className="text-reset">Link 4</a></li>
+                <li><a href="#" className="text-reset">Link 5</a></li>
+              </ul>
+
+              <ul className="col-md-3 list-unstyled">
+                <li className="font-weight-bold text-uppercase">Quick links</li>
+                <li><a href="#" className="text-reset">Link 1</a></li>
+                <li><a href="#" className="text-reset">Link 2</a></li>
+                <li><a href="#" className="text-reset">Link 3</a></li>
+                <li><a href="#" className="text-reset">Link 4</a></li>
+                <li><a href="#" className="text-reset">Link 5</a></li>
+              </ul>
+
+              <ul className="col-md-3 list-unstyled">
+                <li className="font-weight-bold text-uppercase">Redes Sociales</li>
+                <li className="d-flex justify-content-between">
+                  <a href="#" className="text-reset">Link 1</a>
+                  <a href="#" className="text-reset">Link 1</a>
+                  <a href="#" className="text-reset">Link 1</a>
+                  <a href="#" className="text-reset">Link 1</a>
+                </li>
+              </ul>
+
+              <div className="footer-bottom mt-5">
+                <p className="text-xs-center mr-2">&copy;{new Date().getFullYear()} GateOpenTechNology - All Rights Reserved</p>
+              </div>
+            </nav>
+          </div>
+        </footer>
       </React.Fragment >
     );
   }
