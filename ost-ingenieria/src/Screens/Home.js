@@ -1,14 +1,10 @@
 import React, { Component, useState } from 'react';
-import { Navbar, NavDropdown, Nav, Button, Carousel, CardDeck, Card } from 'react-bootstrap';
+import { Navbar, NavDropdown, Nav, Button, Carousel, CardDeck, Card, Image } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import { SocialIcon } from 'react-social-icons';
-import { makeStyles } from '@material-ui/core/styles';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
+
+
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -60,86 +56,7 @@ function ControlledCarousel() {
   );
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
-  },
-  gridList: {
-    flexWrap: 'nowrap',
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: 'translateZ(0)',
-    animation: 'speed'
-  },
-  title: {
-    color: theme.palette.primary.light,
-  },
-  titleBar: {
-    background:
-      'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
-  },
-}));
 
-
-
- 
-
-
- 
-    const tileData = [
-    {
-      img: 'https://concepto.de/wp-content/uploads/2018/04/arquitectura-plano-e1523469843305.jpeg',
-      title: 'Image',
-      author: 'author',
-    },
-    {
-      img: 'https://concepto.de/wp-content/uploads/2018/04/arquitectura-plano-e1523469843305.jpeg',
-      title: 'Image',
-      author: 'author',
-    },
-    {
-      img: 'https://concepto.de/wp-content/uploads/2018/04/arquitectura-plano-e1523469843305.jpeg',
-      title: 'Image',
-      author: 'author',
-    },
-    {
-      img: 'https://concepto.de/wp-content/uploads/2018/04/arquitectura-plano-e1523469843305.jpeg',
-      title: 'Image',
-      author: 'author',
-    }
- ];
- 
-
-function SingleLineGridList() {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      <GridList className={classes.gridList} cols={2.5}>
-        {tileData.map((tile) => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              classes={{
-                root: classes.titleBar,
-                title: classes.title,
-              }}
-              actionIcon={
-                <IconButton aria-label={`star ${tile.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
-            />
-          </GridListTile>
-        ))}
-      </GridList>
-    </div>
-  );
-}
 
 class Home extends Component {
   render() {
@@ -302,9 +219,9 @@ class Home extends Component {
                     </Card.Footer>
                   </Card>
                   <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card.Img variant="top" src="https://www.stanser.com/wp-content/uploads/2018/09/mecanizado-cnc3.jpg" />
                     <Card.Body>
-                      <Card.Title>Mantenimiento Industrial</Card.Title>
+                      <Card.Title>Mecanizado CNC e impresión 3D</Card.Title>
                       <Card.Text>
                         This is a wider card with supporting text below as a natural lead-in to
                         additional content. This card has even longer content than the first to
@@ -317,9 +234,9 @@ class Home extends Component {
                     </Card.Footer>
                   </Card>
                   <Card>
-                    <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
+                    <Card.Img variant="top" src="https://perfiltopografia.es/wp-content/uploads/2017/12/geolocalizacion.jpg" />
                     <Card.Body>
-                      <Card.Title>Gestion de Proyectos</Card.Title>
+                      <Card.Title>Servicios de Topografía y Geolocalización</Card.Title>
                       <Card.Text>
                         This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.
@@ -337,12 +254,41 @@ class Home extends Component {
         </section>
 
         <section style={{ background: 'white' }}>
-          <div className="container mt-3 py-4">
-            <div className="d-flex justify-content-center">
-              <h1 className="display-4 mt-2" style={{ color: 'black' }}>Nuestros Clientes</h1>
-            </div>
-            <div>
-            <SingleLineGridList/>
+          <div className="container mt-1 py-5">
+            <div className="row">
+
+              <Fade left>
+                <div className="col-md-6">
+                  <div>
+                    <Image src="https://negokai.com/wp-content/uploads/2019/11/herramientas-para-crear-tormenta-ideas.jpg" fluid style={{ height: '50%' }} />
+                  </div>
+                </div>
+              </Fade>
+
+              <Fade right>
+                <div className="col-md-6">
+                  <div className="right-content">
+                    <h2 className="display-4" style={{ marginRight: 230, fontSize: 28 }}>MEJOR EQUIPO</h2>
+                    <h1>
+                      "MEJORES SOLUCIONES"
+                  </h1>
+                    <p style={{ textAlign: 'left' }}>
+                      Contamos con un equipo multidisciplinario de técnicos e ingenieros de excelentes capacitaciones
+                      que están siempre dispuestos a ofrecerle las soluciones más factibles para su actividad productiva,
+                      con la aplicación de técnicas experimentadas y de buenas práctica que aseguren que cada uno de nuestros servicios aportan al desarrollo sostenible de su empresa o proyectos.
+                  </p>
+
+                    <p style={{ textAlign: 'left' }}>
+                      Gracias a alianzas estratégicas contamos con talleres especializados y
+                      productores de materiales que están completamente identificado con nuestras políticas de seguridad,
+                      calidad y protección al medioambiente.
+                  </p>
+
+                    <Button variant="outline-primary" size="lg" href="Home">Más acerca de nosotros</Button>
+
+                  </div>
+                </div>
+              </Fade>
             </div>
           </div>
         </section>
