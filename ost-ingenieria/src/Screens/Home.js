@@ -6,6 +6,7 @@ import { SocialIcon } from 'react-social-icons';
 
 
 
+
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
@@ -284,7 +285,7 @@ class Home extends Component {
                       calidad y protección al medioambiente.
                   </p>
 
-                    <Button variant="outline-primary" size="lg" href="Home">Más acerca de nosotros</Button>
+                    <Button variant="outline-primary" size="lg" href="SobreNosotros">Más acerca de nosotros</Button>
 
                   </div>
                 </div>
