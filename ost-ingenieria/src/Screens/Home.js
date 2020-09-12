@@ -2,7 +2,9 @@ import React, { Component, useState } from 'react';
 import { Navbar, NavDropdown, Nav, Button, Carousel, CardDeck, Card, Image } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
+import SobreNosotros from './SobreNosotros';
 import { SocialIcon } from 'react-social-icons';
+
 
 
 
@@ -63,26 +65,26 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
-          <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-            <Navbar.Brand href="#home">OST Ingenieria</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ml-auto">
-                <Nav.Link href="#home">Inicio</Nav.Link>
-                <Nav.Link href="#link">Trayectoria</Nav.Link>
-                <Nav.Link href="#link">Trayectoria</Nav.Link>
-                <NavDropdown className="y-4" title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-        </div>
+          <div>
+            <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+              <Navbar.Brand href={'Home'}>OST Ingenieria</Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="ml-auto">
+                  <Nav.Link>Inicio</Nav.Link>
+                  <Nav.Link href={'SobreNosotros'}>Sobre Nosotros</Nav.Link>
+                  <Nav.Link href="#link">Trayectoria</Nav.Link>
+                  <NavDropdown className="y-4" title="Dropdown" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
+          </div>
 
         <div>
           <ControlledCarousel />
@@ -285,7 +287,7 @@ class Home extends Component {
                       calidad y protección al medioambiente.
                   </p>
 
-                    <Button variant="outline-primary" size="lg" href="SobreNosotros">Más acerca de nosotros</Button>
+                    <Button variant="outline-primary" size="lg">Más acerca de nosotros</Button>
 
                   </div>
                 </div>
@@ -295,11 +297,11 @@ class Home extends Component {
         </section>
 
 
-        <footer className="bg-dark text-white py-4">
+        <footer className="bg-dark text-white py-5">
           <div className="container">
             <nav className="row">
-              <a href="Home" className="col-md-3 text-reset text-uppercase d-flex align-items-center">
-                <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" alt="Logo OST Ingenieria" className="img-logo mr-2" />
+              <a href={'Home'} className="col-md-3 text-reset text-uppercase d-flex align-items-center">
+                <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" alt="Logo OST Ingenieria" className="img-logo" />
               </a>
               <ul className="col-md-3 list-unstyled">
                 <li className="font-weight-bold text-uppercase">Resource</li>
