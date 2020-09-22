@@ -18,7 +18,7 @@ function ControlledCarousel() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
+      <Carousel.Item style={{height:500}}>
         <img
           className="d-block w-100"
           src="https://concepto.de/wp-content/uploads/2018/04/arquitectura-plano-e1523469843305.jpeg"
@@ -29,7 +29,7 @@ function ControlledCarousel() {
           <h2 style={{ color: "red" }}>Oficina de Servicios Técnicos de Ingenieria</h2>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item style={{height:500}}>
         <img
           className="d-block w-100"
           src="https://cdn.pixabay.com/photo/2014/08/05/03/19/bulldozer-410118_960_720.jpg"
@@ -41,7 +41,7 @@ function ControlledCarousel() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item style={{height:500}}>
         <img
           className="d-block w-100"
           src="https://www.menard.es/wp-content/uploads/2016/12/baitra-3-800x400.jpg"
@@ -65,30 +65,32 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-          <div>
-            <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-              <Navbar.Brand href={'Home'}>OST Ingenieria</Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                  <Nav.Link>Inicio</Nav.Link>
-                  <Nav.Link href={'SobreNosotros'}>Sobre Nosotros</Nav.Link>
-                  <Nav.Link href="#link">Trayectoria</Nav.Link>
-                  <NavDropdown className="y-4" title="Dropdown" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                  </NavDropdown>
-                </Nav>
-              </Navbar.Collapse>
-            </Navbar>
-          </div>
-
         <div>
-          <ControlledCarousel />
+          <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+            <Navbar.Brand href={'Home'}>OST Ingenieria</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <Nav.Link>Inicio</Nav.Link>
+                <Nav.Link href={'SobreNosotros'}>Sobre Nosotros</Nav.Link>
+                <Nav.Link href="#link">Trayectoria</Nav.Link>
+                <NavDropdown className="y-4" title="Dropdown" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
         </div>
+
+        <section>
+          <div>
+            <ControlledCarousel />
+          </div>
+        </section>
 
         <section style={{ background: 'white' }}>
           <div className="container mt-5">
@@ -296,12 +298,37 @@ class Home extends Component {
           </div>
         </section>
 
+        <section style={{ background: '#424242' }}>
+          <div className="container py-5">
+
+          </div>
+        </section>
+
+        <section style={{ background: 'white' }}>
+          <div className="container py-4">
+            <div className="row">
+
+              <div className="col-md-6">
+                <div>
+                  <h1 className="display-4" style={{ color: 'Black' }}>Contátecnos</h1>
+                </div>
+              </div>
+
+              <div className="col-md-6 my-auto">
+                <div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.6423345873604!2d-69.8793753680496!3d18.489061135748706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf886f2b9eee59%3A0x415ada375da3302b!2sAv.%20Pdte.%20V%C3%A1squez%2017%2C%20Santo%20Domingo%20Este%2011502!5e1!3m2!1ses-419!2sdo!4v1600737177351!5m2!1ses-419!2sdo" width="600" height="450" frameborder="0" style={{ border: 0}} allowfullscreen="" aria-hidden="false" tabindex="0" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
 
         <footer className="bg-dark text-white py-5">
           <div className="container">
             <nav className="row">
               <a href={'Home'} className="col-md-3 text-reset text-uppercase d-flex align-items-center">
-                <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" alt="Logo OST Ingenieria" className="img-logo" />
+                <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" alt="Logo OST Ingenieria" className="img-logo" style={{ width: '70%', height: '70%' }} />
               </a>
               <ul className="col-md-3 list-unstyled">
                 <li className="font-weight-bold text-uppercase">Resource</li>
@@ -324,10 +351,9 @@ class Home extends Component {
               <ul className="col-md-3 list-unstyled">
                 <li className="font-weight-bold text-uppercase">Redes Sociales</li>
                 <li className="d-flex justify-content-between mt-2">
-                  <a href="#" className="text-reset"><SocialIcon url="https://www.facebook.com/AndresGc1997/" /></a>
+                  <a href="#" className="text-reset"><SocialIcon url="https://www.facebook.com/AndresGc1997/" style={{ size: 20 }} /></a>
                   <a href="#" className="text-reset"><SocialIcon url="https://www.instagram.com/andresgc07/" /></a>
                   <a href="#" className="text-reset"><SocialIcon url="https://twitter.com/jaketrent" /></a>
-                  <a href="#" className="text-reset"><SocialIcon url="https://www.linkedin.com/in/andr%C3%A9s-eugenio-guerrero-cordero-a5a671121/" /></a>
                 </li>
               </ul>
 
