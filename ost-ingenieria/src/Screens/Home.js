@@ -66,28 +66,7 @@ class Home extends Component {
     return (
       <React.Fragment>
         <div>
-<<<<<<< HEAD
-          <Navbar bg="" variant="dark" expand="lg" fixed="top">
-            <Navbar.Brand href={'Home'}>OST Ingeniería</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ml-auto">
-                <Nav.Link>Inicio</Nav.Link>
-                <Nav.Link href={'SobreNosotros'}>Sobre Nosotros</Nav.Link>
-                <Nav.Link href="#link">Trayectoria</Nav.Link>
-                <NavDropdown className="y-4" title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-=======
           <NavbarOST/>
->>>>>>> vistas
         </div>
 
         <section className="mt-5">
@@ -139,15 +118,8 @@ class Home extends Component {
                     <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
                     <Card.Body>
                       <Card.Title>Gestion de Proyectos</Card.Title>
-<<<<<<< HEAD
                       <Card.Text>
                       Nuestra propuesta de gestión de proyectos se fundamenta en poner a disposición de nuestros clientes personal y herramienta que manejan los alineamientos del PMI. Este servicio incluye calculo de cantidades de obras, análisis de riesgos, preparación de licitaciones y/o pliego de condiciones, servicios de oficina técnica, entre otros. Contamos con asesores certificados PMP.
-=======
-                      <Card.Text style={{ textAlign: 'left' }}>
-                        Nuestra propuesta de gestión de proyectos se fundamenta en poner a
-                        disposición de nuestros clientes personal y herramienta que manejan
-                        los alineamientos del PMI.
->>>>>>> vistas
                 </Card.Text>
                       <Button variant="primary">Saber más</Button>
                     </Card.Body>
@@ -158,19 +130,10 @@ class Home extends Component {
                   <Card>
                     <Card.Img variant="top" src="https://2.bp.blogspot.com/-_jyk_a-L8H8/Wc1YV7mGzVI/AAAAAAAAC4w/ZmRwb9_DoTIKcmNhclP2adHylNMi3mrjgCLcBGAs/s750/instalaciones_electricas.jpg" />
                     <Card.Body>
-<<<<<<< HEAD
                       <Card.Title>Instalaciones Eléctricas-Instrumentación y Control</Card.Title>
                       <Card.Text>
                       El servicio de instalaciones eléctricas que ofrecemos no solo se limita a las instalaciones industriales de media y baja tensión, en este apartado también incluimos, los diseños de estas, hacemos instalaciones de sistemas de detección de incendios, sistemas CCTV, Data, megafonía, PLC, Centro de control de motores y más.
         content.{' '}
-=======
-                      <Card.Title style={{fontSize:19}}>Instalaciones Eléctricas</Card.Title>
-                      <Card.Text style={{ textAlign: 'left' }}>
-                        El servicio de instalaciones eléctricas que ofrecemos no solo se limita a
-                        las instalaciones industriales de media y baja tensión,
-                        también incluimos, los diseños de estas.
-                        {' '}
->>>>>>> vistas
                       </Card.Text>
                       <Button variant="primary">Saber más</Button>
                     </Card.Body>
@@ -181,16 +144,9 @@ class Home extends Component {
                   <Card>
                     <Card.Img variant="top" src="https://2.bp.blogspot.com/-6_KCeieik6k/Wt_henJOfxI/AAAAAAAAB_Q/9MkZKZ_kDAsKak9EDmOlo1pOw5UjwjEHwCLcBGAs/s750/Mantenimiento_Industrial.jpg" />
                     <Card.Body>
-<<<<<<< HEAD
                       <Card.Title>Instalaciones Mecánicas</Card.Title>
                       <Card.Text>
                       Contamos con personal altamente calificado para trabajos de metalmecánica, sistemas de tuberías, instalaciones de ductos, maquinas rotativas y sistemas estáticos como filtros, chimeneas, ciclones, intercambiadores y tanques.
-=======
-                      <Card.Title style={{fontSize:18}}>Instalaciones Mecánicas</Card.Title>
-                      <Card.Text style={{ textAlign: 'left' }}>
-                      Contamos con personal altamente calificado para trabajos de metalmecánica, 
-                      sistemas de tuberías, instalaciones de ductos, maquinas rotativas y sistemas estáticos.
->>>>>>> vistas
               </Card.Text>
                       <Button variant="primary">Saber más</Button>
                     </Card.Body>
@@ -198,24 +154,7 @@ class Home extends Component {
                       <small className="text-muted">Last updated 3 mins ago</small>
                     </Card.Footer>
                   </Card>
-<<<<<<< HEAD
                   
-=======
-                  <Card>
-                    <Card.Img variant="top" src="https://www.usm.cl/assets/img/carreras/fotos/concepcion-tecnico-universitario-en-automatizacion-y-control.w700.jpg" style={{ height: '31%' }} />
-                    <Card.Body>
-                      <Card.Title style={{fontSize:17.2}}>Instrumentación & Control</Card.Title>
-                      <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-               </Card.Text>
-                      <Button variant="primary">Saber más</Button>
-                    </Card.Body>
-                    <Card.Footer>
-                      <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                  </Card>
->>>>>>> vistas
                 </CardDeck>
               </div>
             </Fade>
