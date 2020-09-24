@@ -21,7 +21,7 @@ function ControlledCarousel() {
       <Carousel.Item style={{height:500}}>
         <img
           className="d-block w-100"
-          src="https://concepto.de/wp-content/uploads/2018/04/arquitectura-plano-e1523469843305.jpeg"
+          src="https://bextroconsultora.com/wp-content/uploads/2017/07/Ing.-Civil-06-07-17-formaletas.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -66,8 +66,8 @@ class Home extends Component {
     return (
       <React.Fragment>
         <div>
-          <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-            <Navbar.Brand href={'Home'}>OST Ingenieria</Navbar.Brand>
+          <Navbar bg="" variant="dark" expand="lg" fixed="top">
+            <Navbar.Brand href={'Home'}>OST Ingeniería</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
@@ -136,8 +136,7 @@ class Home extends Component {
                     <Card.Body>
                       <Card.Title>Gestion de Proyectos</Card.Title>
                       <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
+                      Nuestra propuesta de gestión de proyectos se fundamenta en poner a disposición de nuestros clientes personal y herramienta que manejan los alineamientos del PMI. Este servicio incluye calculo de cantidades de obras, análisis de riesgos, preparación de licitaciones y/o pliego de condiciones, servicios de oficina técnica, entre otros. Contamos con asesores certificados PMP.
                 </Card.Text>
                       <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -148,9 +147,9 @@ class Home extends Component {
                   <Card>
                     <Card.Img variant="top" src="https://2.bp.blogspot.com/-_jyk_a-L8H8/Wc1YV7mGzVI/AAAAAAAAC4w/ZmRwb9_DoTIKcmNhclP2adHylNMi3mrjgCLcBGAs/s750/instalaciones_electricas.jpg" />
                     <Card.Body>
-                      <Card.Title>Instalaciones Eléctricas</Card.Title>
+                      <Card.Title>Instalaciones Eléctricas-Instrumentación y Control</Card.Title>
                       <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
+                      El servicio de instalaciones eléctricas que ofrecemos no solo se limita a las instalaciones industriales de media y baja tensión, en este apartado también incluimos, los diseños de estas, hacemos instalaciones de sistemas de detección de incendios, sistemas CCTV, Data, megafonía, PLC, Centro de control de motores y más.
         content.{' '}
                       </Card.Text>
                       <Button variant="primary">Go somewhere</Button>
@@ -164,9 +163,7 @@ class Home extends Component {
                     <Card.Body>
                       <Card.Title>Instalaciones Mecánicas</Card.Title>
                       <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
+                      Contamos con personal altamente calificado para trabajos de metalmecánica, sistemas de tuberías, instalaciones de ductos, maquinas rotativas y sistemas estáticos como filtros, chimeneas, ciclones, intercambiadores y tanques.
               </Card.Text>
                       <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -174,20 +171,7 @@ class Home extends Component {
                       <small className="text-muted">Last updated 3 mins ago</small>
                     </Card.Footer>
                   </Card>
-                  <Card>
-                    <Card.Img variant="top" src="https://www.usm.cl/assets/img/carreras/fotos/concepcion-tecnico-universitario-en-automatizacion-y-control.w700.jpg" style={{ height: '29.5%' }} />
-                    <Card.Body>
-                      <Card.Title>Instrumentación & Control</Card.Title>
-                      <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-               </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                    <Card.Footer>
-                      <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                  </Card>
+                  
                 </CardDeck>
               </div>
             </Fade>
@@ -214,7 +198,7 @@ class Home extends Component {
                     <Card.Body>
                       <Card.Title>Mantenimiento Industrial & Refrigeración</Card.Title>
                       <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
+                      Somos un aliado perfecto para su organización haciendo que su personal se concentre únicamente en labores productivas, los trabajos de refrigeración suelen ser frecuentes tanto en la producción como los trabajos de oficina, es por eso que ponemos a su disposición nuestro cuerpo de técnicos que ofrecerán las soluciones técnicas y económicas mas factibles para su empresa o proyecto.
         content.{' '}
                       </Card.Text>
                       <Button variant="primary">Go somewhere</Button>
@@ -228,9 +212,7 @@ class Home extends Component {
                     <Card.Body>
                       <Card.Title>Mecanizado CNC e impresión 3D</Card.Title>
                       <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
+                      Contamos con talleres especializados en mecanizado con control numérico con modernas maquinas que ofrecen precisión y excelentes tiempos de ejecución de los requerimientos de nuestros clientes. Hacemos trabajos de impresión 3D en toda la gama de materiales posibles, principalmente PLA, Petg, Flex y otros.  
               </Card.Text>
                       <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -243,8 +225,7 @@ class Home extends Component {
                     <Card.Body>
                       <Card.Title>Servicios de Topografía y Geolocalización</Card.Title>
                       <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
+                      Ofrecemos outsourcing para Control de obra y evaluación de impacto, Seguimiento a planificación minera, inventario de materiales de acopio, levantamiento topográfico de minas a cielo abierto, asistencia por Dron y GPS.
                </Card.Text>
                       <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
@@ -277,13 +258,13 @@ class Home extends Component {
                     <h1>
                       "MEJORES SOLUCIONES"
                   </h1>
-                    <p style={{ textAlign: 'left' }}>
+                    <p style={{ textAlign: 'justify' }}>
                       Contamos con un equipo multidisciplinario de técnicos e ingenieros de excelentes capacitaciones
                       que están siempre dispuestos a ofrecerle las soluciones más factibles para su actividad productiva,
                       con la aplicación de técnicas experimentadas y de buenas práctica que aseguren que cada uno de nuestros servicios aportan al desarrollo sostenible de su empresa o proyectos.
                   </p>
 
-                    <p style={{ textAlign: 'left' }}>
+                    <p style={{ textAlign: 'justify' }}>
                       Gracias a alianzas estratégicas contamos con talleres especializados y
                       productores de materiales que están completamente identificado con nuestras políticas de seguridad,
                       calidad y protección al medioambiente.
