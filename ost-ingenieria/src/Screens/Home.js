@@ -1,13 +1,13 @@
 import React, { Component, useState } from 'react';
-import { Navbar, NavDropdown, Nav, Button, Carousel, CardDeck, Card, Image } from 'react-bootstrap';
+import { Navbar, NavDropdown, Nav, Button, Carousel, CardDeck, Card, Image, Form } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import SobreNosotros from './SobreNosotros';
+import NavbarOST from './Navbar/NavbarOST';
 import { SocialIcon } from 'react-social-icons';
-
-
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
+import FooterOST from './Footer/FooterOST';
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -18,7 +18,7 @@ function ControlledCarousel() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item style={{height:500}}>
+      <Carousel.Item style={{ height: 500 }}>
         <img
           className="d-block w-100"
           src="https://concepto.de/wp-content/uploads/2018/04/arquitectura-plano-e1523469843305.jpeg"
@@ -29,7 +29,7 @@ function ControlledCarousel() {
           <h2 style={{ color: "red" }}>Oficina de Servicios Técnicos de Ingenieria</h2>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{height:500}}>
+      <Carousel.Item style={{ height: 500 }}>
         <img
           className="d-block w-100"
           src="https://cdn.pixabay.com/photo/2014/08/05/03/19/bulldozer-410118_960_720.jpg"
@@ -41,7 +41,7 @@ function ControlledCarousel() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{height:500}}>
+      <Carousel.Item style={{ height: 500 }}>
         <img
           className="d-block w-100"
           src="https://www.menard.es/wp-content/uploads/2016/12/baitra-3-800x400.jpg"
@@ -66,27 +66,10 @@ class Home extends Component {
     return (
       <React.Fragment>
         <div>
-          <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-            <Navbar.Brand href={'Home'}>OST Ingenieria</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ml-auto">
-                <Nav.Link>Inicio</Nav.Link>
-                <Nav.Link href={'SobreNosotros'}>Sobre Nosotros</Nav.Link>
-                <Nav.Link href="#link">Trayectoria</Nav.Link>
-                <NavDropdown className="y-4" title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
+          <NavbarOST/>
         </div>
 
-        <section>
+        <section className="mt-5">
           <div>
             <ControlledCarousel />
           </div>
@@ -135,11 +118,12 @@ class Home extends Component {
                     <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
                     <Card.Body>
                       <Card.Title>Gestion de Proyectos</Card.Title>
-                      <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
+                      <Card.Text style={{ textAlign: 'left' }}>
+                        Nuestra propuesta de gestión de proyectos se fundamenta en poner a
+                        disposición de nuestros clientes personal y herramienta que manejan
+                        los alineamientos del PMI.
                 </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">Saber más</Button>
                     </Card.Body>
                     <Card.Footer>
                       <small className="text-muted">Last updated 3 mins ago</small>
@@ -148,12 +132,14 @@ class Home extends Component {
                   <Card>
                     <Card.Img variant="top" src="https://2.bp.blogspot.com/-_jyk_a-L8H8/Wc1YV7mGzVI/AAAAAAAAC4w/ZmRwb9_DoTIKcmNhclP2adHylNMi3mrjgCLcBGAs/s750/instalaciones_electricas.jpg" />
                     <Card.Body>
-                      <Card.Title>Instalaciones Eléctricas</Card.Title>
-                      <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+                      <Card.Title style={{fontSize:19}}>Instalaciones Eléctricas</Card.Title>
+                      <Card.Text style={{ textAlign: 'left' }}>
+                        El servicio de instalaciones eléctricas que ofrecemos no solo se limita a
+                        las instalaciones industriales de media y baja tensión,
+                        también incluimos, los diseños de estas.
+                        {' '}
                       </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">Saber más</Button>
                     </Card.Body>
                     <Card.Footer>
                       <small className="text-muted">Last updated 3 mins ago</small>
@@ -162,27 +148,26 @@ class Home extends Component {
                   <Card>
                     <Card.Img variant="top" src="https://2.bp.blogspot.com/-6_KCeieik6k/Wt_henJOfxI/AAAAAAAAB_Q/9MkZKZ_kDAsKak9EDmOlo1pOw5UjwjEHwCLcBGAs/s750/Mantenimiento_Industrial.jpg" />
                     <Card.Body>
-                      <Card.Title>Instalaciones Mecánicas</Card.Title>
-                      <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
+                      <Card.Title style={{fontSize:18}}>Instalaciones Mecánicas</Card.Title>
+                      <Card.Text style={{ textAlign: 'left' }}>
+                      Contamos con personal altamente calificado para trabajos de metalmecánica, 
+                      sistemas de tuberías, instalaciones de ductos, maquinas rotativas y sistemas estáticos.
               </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">Saber más</Button>
                     </Card.Body>
                     <Card.Footer>
                       <small className="text-muted">Last updated 3 mins ago</small>
                     </Card.Footer>
                   </Card>
                   <Card>
-                    <Card.Img variant="top" src="https://www.usm.cl/assets/img/carreras/fotos/concepcion-tecnico-universitario-en-automatizacion-y-control.w700.jpg" style={{ height: '29.5%' }} />
+                    <Card.Img variant="top" src="https://www.usm.cl/assets/img/carreras/fotos/concepcion-tecnico-universitario-en-automatizacion-y-control.w700.jpg" style={{ height: '31%' }} />
                     <Card.Body>
-                      <Card.Title>Instrumentación & Control</Card.Title>
+                      <Card.Title style={{fontSize:17.2}}>Instrumentación & Control</Card.Title>
                       <Card.Text>
                         This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.
                </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">Saber más</Button>
                     </Card.Body>
                     <Card.Footer>
                       <small className="text-muted">Last updated 3 mins ago</small>
@@ -203,7 +188,7 @@ class Home extends Component {
                         This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.
                 </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">Saber más</Button>
                     </Card.Body>
                     <Card.Footer>
                       <small className="text-muted">Last updated 3 mins ago</small>
@@ -217,7 +202,7 @@ class Home extends Component {
                         This card has supporting text below as a natural lead-in to additional
         content.{' '}
                       </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">Saber más</Button>
                     </Card.Body>
                     <Card.Footer>
                       <small className="text-muted">Last updated 3 mins ago</small>
@@ -232,7 +217,7 @@ class Home extends Component {
                         additional content. This card has even longer content than the first to
                         show that equal height action.
               </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">Saber más</Button>
                     </Card.Body>
                     <Card.Footer>
                       <small className="text-muted">Last updated 3 mins ago</small>
@@ -246,7 +231,7 @@ class Home extends Component {
                         This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.
                </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">Saber más</Button>
                     </Card.Body>
                     <Card.Footer>
                       <small className="text-muted">Last updated 3 mins ago</small>
@@ -265,7 +250,7 @@ class Home extends Component {
               <Fade left>
                 <div className="col-md-6">
                   <div>
-                    <Image src="https://negokai.com/wp-content/uploads/2019/11/herramientas-para-crear-tormenta-ideas.jpg" fluid style={{ height: '50%' }} />
+                    <Image src="https://negokai.com/wp-content/uploads/2019/11/herramientas-para-crear-tormenta-ideas.jpg" fluid style={{ height: 400, width: 820, borderRadius: 10 }} />
                   </div>
                 </div>
               </Fade>
@@ -305,64 +290,68 @@ class Home extends Component {
         </section>
 
         <section style={{ background: 'white' }}>
-          <div className="container py-4">
+          <div className="container py-5">
             <div className="row">
 
               <div className="col-md-6">
-                <div>
-                  <h1 className="display-4" style={{ color: 'Black' }}>Contátecnos</h1>
-                </div>
+                <Fade left>
+                  <div>
+                    <h1 className="display-4" style={{ color: 'Black' }}>Contátecnos</h1>
+                  </div>
+                  <div className="mt-5 mr-5">
+                    <Form>
+                      <Form.Group controlId="exampleForm.ControlInput1">
+                        <Form.Label>Correo Electrónico:</Form.Label>
+                        <Form.Control type="email" placeholder="nombre@ejemplo.com" />
+                      </Form.Group>
+
+                      <Form.Group controlId="exampleForm.ControlInput1">
+                        <Form.Label>Motivo:</Form.Label>
+                        <Form.Control type="text" />
+                      </Form.Group>
+
+                      <Form.Group controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Mensaje:</Form.Label>
+                        <Form.Control as="textarea" rows="3" />
+                      </Form.Group>
+
+                      <Button variant="primary" type="submit">
+                        Enviar
+                    </Button>
+                    </Form>
+                  </div>
+                </Fade>
               </div>
 
-              <div className="col-md-6 my-auto">
-                <div>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.6423345873604!2d-69.8793753680496!3d18.489061135748706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf886f2b9eee59%3A0x415ada375da3302b!2sAv.%20Pdte.%20V%C3%A1squez%2017%2C%20Santo%20Domingo%20Este%2011502!5e1!3m2!1ses-419!2sdo!4v1600737177351!5m2!1ses-419!2sdo" width="600" height="450" frameborder="0" style={{ border: 0}} allowfullscreen="" aria-hidden="false" tabindex="0" />
-                </div>
+              <div className="col-md-6 mt-5">
+                <Fade right>
+                  <div className="d-flex justify-content">
+                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#388e3c', fontSize: 40 }} />
+                    <h1 className="display-4 ml-3" style={{ fontSize: 28 }}>Encuéntrenos en la oficina</h1>
+                  </div>
+                  <div className="ml-5">
+                    <p>Estamos ubicados en Av. Pdte. Vasquez 17, <br />
+                  Esq. Juan Isidro Jimenez, Alma Rosa, <br />
+                  Santo Domingo Este.</p>
+                  </div>
+
+                  <div className="d-flex justify-content mt-5">
+                    <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 40 }} />
+                    <h1 className="display-4 ml-3" style={{ fontSize: 28 }}>Danos una llamada</h1>
+                  </div>
+                  <div className="ml-5">
+                    <p>Oficina: (809) 595-9401, <br />
+                    Celular: (809) 975-8958.<br />
+                    </p>
+                  </div>
+                </Fade>
               </div>
 
             </div>
           </div>
         </section>
 
-        <footer className="bg-dark text-white py-5">
-          <div className="container">
-            <nav className="row">
-              <a href={'Home'} className="col-md-3 text-reset text-uppercase d-flex align-items-center">
-                <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" alt="Logo OST Ingenieria" className="img-logo" style={{ width: '70%', height: '70%' }} />
-              </a>
-              <ul className="col-md-3 list-unstyled">
-                <li className="font-weight-bold text-uppercase">Resource</li>
-                <li><a href="#" className="text-reset">Link 1</a></li>
-                <li><a href="#" className="text-reset">Link 2</a></li>
-                <li><a href="#" className="text-reset">Link 3</a></li>
-                <li><a href="#" className="text-reset">Link 4</a></li>
-                <li><a href="#" className="text-reset">Link 5</a></li>
-              </ul>
-
-              <ul className="col-md-3 list-unstyled">
-                <li className="font-weight-bold text-uppercase">Quick links</li>
-                <li><a href="#" className="text-reset">Link 1</a></li>
-                <li><a href="#" className="text-reset">Link 2</a></li>
-                <li><a href="#" className="text-reset">Link 3</a></li>
-                <li><a href="#" className="text-reset">Link 4</a></li>
-                <li><a href="#" className="text-reset">Link 5</a></li>
-              </ul>
-
-              <ul className="col-md-3 list-unstyled">
-                <li className="font-weight-bold text-uppercase">Redes Sociales</li>
-                <li className="d-flex justify-content-between mt-2">
-                  <a href="#" className="text-reset"><SocialIcon url="https://www.facebook.com/AndresGc1997/" style={{ size: 20 }} /></a>
-                  <a href="#" className="text-reset"><SocialIcon url="https://www.instagram.com/andresgc07/" /></a>
-                  <a href="#" className="text-reset"><SocialIcon url="https://twitter.com/jaketrent" /></a>
-                </li>
-              </ul>
-
-              <div className="footer-bottom mt-5">
-                <p className="text-xs-center mr-2">&copy;{new Date().getFullYear()} GateOpenTechNology - All Rights Reserved</p>
-              </div>
-            </nav>
-          </div>
-        </footer>
+        <FooterOST/>
       </React.Fragment >
     );
   }
