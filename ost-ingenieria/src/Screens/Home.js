@@ -21,12 +21,12 @@ function ControlledCarousel() {
       <Carousel.Item style={{ height: 500 }}>
         <img
           className="d-block w-100"
-          src="https://bextroconsultora.com/wp-content/uploads/2017/07/Ing.-Civil-06-07-17-formaletas.jpg"
+          src="https://centrocomercialvirtual.net/wp-content/uploads/2020/04/wire-1098059_1280.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h1 style={{ color: "red", fontSize: 64 }}>OST INGENIERÍA</h1>
-          <h2 style={{ color: "red" }}>Oficina de Servicios Técnicos de Ingenieria</h2>
+          <h3 style={{ color: "white", fontSize: 36 }}>OST INGENIERÍA </h3>
+          <p> Oficina de Servicios Técnicos de Ingeniería </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item style={{ height: 500 }}>
@@ -44,7 +44,7 @@ function ControlledCarousel() {
       <Carousel.Item style={{ height: 500 }}>
         <img
           className="d-block w-100"
-          src="https://www.menard.es/wp-content/uploads/2016/12/baitra-3-800x400.jpg"
+          src="https://estaticos.qdq.com/coverphotos/121/738/0000.jpeg"
           alt="Third slide"
         />
 
@@ -65,10 +65,12 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
+         
         <div>
-          <NavbarOST/>
+         <NavbarOST/>
         </div>
-
+        
+        
         <section className="mt-5">
           <div>
             <ControlledCarousel />
@@ -93,7 +95,7 @@ class Home extends Component {
 
               <Fade right>
                 <div className="col-md-6">
-                  <div className="content-right">
+                  <div className="content-right" >
                     <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" style={{ width: '80%' }} />
                   </div>
                 </div>
@@ -104,7 +106,7 @@ class Home extends Component {
 
         </section>
 
-        <section style={{ background: '#424242' }}>
+        <section style={{ background: '#252440' }}>
           <div className="container p-4">
             <Fade left>
               <div className="d-flex justify-content-center" style={{}}>
@@ -117,7 +119,7 @@ class Home extends Component {
                   <Card>
                     <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
                     <Card.Body>
-                      <Card.Title>Gestion de Proyectos</Card.Title>
+                      <Card.Title>Gestión de Proyectos</Card.Title>
                       <Card.Text>
                       Nuestra propuesta de gestión de proyectos se fundamenta en poner a disposición de nuestros clientes personal y herramienta que manejan los alineamientos del PMI. Este servicio incluye calculo de cantidades de obras, análisis de riesgos, preparación de licitaciones y/o pliego de condiciones, servicios de oficina técnica, entre otros. Contamos con asesores certificados PMP.
                 </Card.Text>
@@ -193,7 +195,7 @@ class Home extends Component {
                   <Card>
                     <Card.Img variant="top" src="https://www.stanser.com/wp-content/uploads/2018/09/mecanizado-cnc3.jpg" />
                     <Card.Body>
-                      <Card.Title>Mecanizado CNC e impresión 3D</Card.Title>
+                      <Card.Title>Mecanizado CNC e Impresión 3D</Card.Title>
                       <Card.Text>
                       Contamos con talleres especializados en mecanizado con control numérico con modernas maquinas que ofrecen precisión y excelentes tiempos de ejecución de los requerimientos de nuestros clientes. Hacemos trabajos de impresión 3D en toda la gama de materiales posibles, principalmente PLA, Petg, Flex y otros.  
               </Card.Text>
@@ -262,7 +264,7 @@ class Home extends Component {
           </div>
         </section>
 
-        <section style={{ background: '#424242' }}>
+        <section style={{ background: '#252440' }}>
           <div className="container py-5">
 
           </div>
@@ -310,7 +312,7 @@ class Home extends Component {
                   </div>
                   <div className="ml-5">
                     <p>Estamos ubicados en Av. Pdte. Vasquez 17, <br />
-                  Esq. Juan Isidro Jimenez, Alma Rosa, <br />
+                  Esq. Juan Isidro Jiménez, Alma Rosa, <br />
                   Santo Domingo Este.</p>
                   </div>
 

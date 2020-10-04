@@ -25,7 +25,7 @@ function ControlledCarousel() {
                 />
                 <Carousel.Caption>
                     <h1 style={{ color: "red", fontSize: 64 }}>OST INGENIERÍA</h1>
-                    <h2 style={{ color: "red" }}>Oficina de Servicios Técnicos de Ingenieria</h2>
+                    <h2 style={{ color: "red" }}>Oficina de Servicios Técnicos de Ingeniería</h2>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
@@ -57,7 +57,7 @@ const Contactos = () => {
                                 <div className="mt-5 mr-5">
                                     <Form>
                                         <Form.Group controlId="exampleForm.ControlInput1">
-                                            <Form.Label>Correo Electrónico:</Form.Label>
+                                            <Form.Label>Correo electrónico:</Form.Label>
                                             <Form.Control type="email" placeholder="nombre@ejemplo.com" />
                                         </Form.Group>
 
@@ -87,8 +87,8 @@ const Contactos = () => {
                                 </div>
                                 <div className="ml-5">
                                     <p>Estamos ubicados en Av. Pdte. Vasquez 17, <br />
-                  Esq. Juan Isidro Jimenez, Alma Rosa, <br />
-                  Santo Domingo Este.</p>
+                  Esq. Juan Isidro Jiménez, Alma Rosa, <br />
+                  Santo Domingo Este, Rep. Dom.</p>
                                 </div>
 
                                 <div className="d-flex justify-content mt-5">
@@ -96,8 +96,8 @@ const Contactos = () => {
                                     <h1 className="display-4 ml-3" style={{ fontSize: 28 }}>Danos una llamada</h1>
                                 </div>
                                 <div className="ml-5">
-                                    <p>Oficina: (809) 595-9401, <br />
-                    Celular: (809) 975-8958.<br />
+                                    <p>Oficina: (809) 595-9401. <br />
+                    Móvil: (809) 975-8958.<br />
                                     </p>
                                 </div>
                             </Fade>
