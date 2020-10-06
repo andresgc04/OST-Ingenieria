@@ -3,93 +3,98 @@ import { Navbar, NavDropdown, Nav, Button, Carousel, CardDeck, Card, Image } fro
 import Fade from 'react-reveal/Fade';
 import NavbarOST from './Navbar/NavbarOST';
 import FooterOST from './Footer/FooterOST';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhoneSquareAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 class SobreNosotros extends Component {
     render() {
         return (
             <React.Fragment>
                 <div>
-                    <NavbarOST/>
+                    <NavbarOST />
                 </div>
 
                 <section>
                     <div className="container mt-5 py-4">
-                    <CardDeck>
-                        <Card>
-                            <Card.Img variant="top" src="https://static.wixstatic.com/media/a0de8a_482b6a7fcc2645e5a5b9f10a3ef9a71a~mv2.jpg/v1/fill/w_119,h_118,al_c,q_80,usm_0.66_1.00_0.01/20191125_144748.webp" />
-                            <Card.Body>
-                                <Card.Title>Melvin Montero, CEO </Card.Title>
-                                <Card.Text>
-                                <p style={{ textAlign: 'justify' }}>
-                                Ing. Electromecánico por la Universidad Central del Este, con un Master en Generación de Energía Eléctrica por la Universidad Politécnica de Madrid.
+                        <div className="row">
+                            <div className="col-md-6 mt-5">
+                                <div className="d-flex justify-content">
+                                    <Image style={{ marginLeft: -100 }} src="https://static.wixstatic.com/media/a0de8a_482b6a7fcc2645e5a5b9f10a3ef9a71a~mv2.jpg/v1/fill/w_119,h_118,al_c,q_80,usm_0.66_1.00_0.01/20191125_144748.webp" roundedCircle />
+                                    <div><h3 className="ml-4">Melvin Montero,CEO</h3></div>
+                                </div>
+                                <div style={{ marginTop: -60 }} className="ml-5">
+                                    <p> Ing. Electromecánico por la Universidad Central del Este, con un Master en Generación de Energía Eléctrica por la Universidad Politécnica de Madrid. <br />
 
-                                Cuenta con más de 10 años de experiencia en la ejecución de proyectos industriales en centro américa  y el caribe, en los sectores de minería, cemento y energía.
-                                 </p>  
-      </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">Mail: ostingenieria@gmail.com | Móvil: 809-975-8958</small>
-                            </Card.Footer>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src="https://static.wixstatic.com/media/a0de8a_0c7b36b29ffc4ac88221086f14119a40~mv2.jpg/v1/fill/w_119,h_118,al_c,q_80,usm_0.66_1.00_0.01/20200704_091734.webp" />
-                            <Card.Body>
-                                <Card.Title>Angela Cepeda, CFO</Card.Title>
-                                <Card.Text>
-                                <p style={{ textAlign: 'justify' }}>
-                                Lic. Contabilidad por la Universidad Tecnologica UTESA.
+                                            Cuenta con más de 10 años de experiencia en la ejecución de proyectos industriales en centro américa  y el caribe, en los sectores de minería, cemento y energía.</p>
+                                    <div className="d-flex justify-content">
+                                        <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 40 }} />
+                                        <p style={{ marginTop: 5, marginLeft: 10 }}>(809) 975-8958</p>
+                                        <FontAwesomeIcon icon={faEnvelope} style={{ marginLeft: 20, color: '#f57c00', fontSize: 40 }} />
+                                        <p style={{ marginTop: 5, marginLeft: 10 }} > ostingenieria@gmail.com</p>
+                                    </div>
+                                </div>
 
-                                Experta en asuntos financieros, presupuestos y asesora tributaria. Fundadora de AM&C Soluciones, empresa dedicada al financiamiento de automóviles e inmuebles.
-                                </p>
+                            </div>
+                            <div className="col-md-6 mt-4 ">
+                                <div className="d-flex justify-content">
+                                    <Image style={{ marginLeft: -100 }} src="https://static.wixstatic.com/media/a0de8a_0c7b36b29ffc4ac88221086f14119a40~mv2.jpg/v1/fill/w_119,h_118,al_c,q_80,usm_0.66_1.00_0.01/20200704_091734.webp" roundedCircle />
+                                    <div><h3 className="ml-4">Angela Cepeda, CFO</h3></div>
+                                </div>
+                                <div style={{ marginTop: -60 }} className="ml-5">
+                                    <p>Lic. Contabilidad por la Universidad Tecnologica UTESA.
+                                        Experta en asuntos financieros, presupuestos y asesora tributaria. Fundadora de AM&C Soluciones, empresa dedicada al financiamiento de automóviles e inmuebles.</p>
+                                    <div className="d-flex justify-content">
+                                        <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 40 }} />
+                                        <p style={{ marginTop: 5, marginLeft: 10 }}>(829) 566-4182</p>
+                                        <FontAwesomeIcon icon={faEnvelope} style={{ marginLeft: 20, color: '#f57c00', fontSize: 40 }} />
+                                        <p style={{ marginTop: 5, marginLeft: 10 }} > grissel21@hotmail.com </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="col-md-6 mt-5 ml-2">
+                                <div className="d-flex justify-content">
+                                    <Image style={{ marginLeft: -100 }} src="https://static.wixstatic.com/media/a0de8a_e00777af00e943aeaea03b12c60fb5b2~mv2.jpg/v1/fill/w_119,h_118,al_c,q_80,usm_0.66_1.00_0.01/FB_IMG_1593869572553.webp" roundedCircle />
+                                    <div><h3 className="ml-4">Greysis A. De los Santos, RRHH</h3></div>
+                                </div>
+                                <div style={{ marginTop: -60 }} className="ml-5">
+                                    <p> Ing. Industrial por la Universidad Central del Este.
                                 
-        content.{' '}
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">Mail: grissel21@hotmail.com | Móvil: 829-566-4182</small>
-                            </Card.Footer>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src="https://static.wixstatic.com/media/a0de8a_e0b9fa37986247e6a792c901f9b81c9e~mv2.jpg/v1/fill/w_119,h_118,al_c,q_80,usm_0.66_1.00_0.01/FB_IMG_1593948589059.webp" />
-                            <Card.Body>
-                                <Card.Title>Walter Anton, Asesor Técnico</Card.Title>
-                                <Card.Text>
-                                <p style={{ textAlign: 'justify' }}>
-                                Ing. Mecánico por la Universidad de la Libertad, Perú. Profesional con más de 20 años de experiencia en el sector industrial y la implementación de proyectos como muelles, hidroeléctricas, centrales térmicas y minería.
-                                </p>   
-                                    
-      </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">Mail: walter_ap@homail.com | Móvil: 829-290-3386</small>
-                            </Card.Footer>
-                        </Card>
-                        <Card>
-                            <Card.Img variant="top" src="https://static.wixstatic.com/media/a0de8a_e00777af00e943aeaea03b12c60fb5b2~mv2.jpg/v1/fill/w_119,h_118,al_c,q_80,usm_0.66_1.00_0.01/FB_IMG_1593869572553.webp" />
-                            <Card.Body>
-                                <Card.Title>Greisy A. De los Santo, RRHH</Card.Title>
+                                    Experta en reclutamiento y manejo de personal.
+                                    </p>
+                                    <div className="d-flex justify-content">
+                                        <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 40 }} />
+                                        <p style={{ marginTop: 5, marginLeft: 10 }}>(809) 702-6429</p>
+                                        <FontAwesomeIcon icon={faEnvelope} style={{ marginLeft: 20, color: '#f57c00', fontSize: 40 }} />
+                                        <p style={{ marginTop: 5, marginLeft: 10 }} > ostingenieria@gmail.com </p>
+                                    </div>
 
-                                <Card.Text>
-                                <p style={{ textAlign: 'justify' }}>
-                                Ing. Industrial por la Universidad Central del Este.
+                                </div>
+                            </div>
 
-                                ​
+                            <div className="col-md-4 mt-4  ">
+                                <div className="d-flex justify-content">
+                                    <Image style={{ marginLeft: -100 }} src="https://static.wixstatic.com/media/a0de8a_0c7b36b29ffc4ac88221086f14119a40~mv2.jpg/v1/fill/w_119,h_118,al_c,q_80,usm_0.66_1.00_0.01/20200704_091734.webp" roundedCircle />
+                                    <div><h3 className="ml-4">Angela Cepeda, CFO</h3></div>
+                                </div>
+                                <div style={{ marginTop: -60 }} className="ml-4">
+                                    <p>Lic. Contabilidad por la Universidad Tecnologica UTESA.
+                                        Experta en asuntos financieros, presupuestos y asesora tributaria. Fundadora de AM&C Soluciones, empresa dedicada al financiamiento de automóviles e inmuebles.</p>
+                                    <div className="d-flex justify-content">
+                                        <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 40 }} />
+                                        <p style={{ marginTop: 5, marginLeft: 10 }}>(829) 566-4182</p>
+                                        <FontAwesomeIcon icon={faEnvelope} style={{ marginLeft: 20, color: '#f57c00', fontSize: 40 }} />
+                                        <p style={{ marginTop: 5, marginLeft: 10 }} > grissel21@hotmail.com </p>
+                                    </div>
 
-                                Experta en reclutamiento y manejo de personal.
-                                </p>
+                                </div>
+                            </div>
 
-                                    
-                              </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">Mail: ostingenieria@gmail.com | Móvil: 809-702-6429</small>
-                            </Card.Footer>
-                        </Card>
-                    </CardDeck>
+
+                        </div>
                     </div>
                 </section>
 
-                <FooterOST/>
+
             </React.Fragment>
         )
     }
