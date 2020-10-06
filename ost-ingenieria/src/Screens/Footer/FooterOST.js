@@ -7,7 +7,7 @@ const FooterOST = () => {
             <div className="container">
                 <nav className="row">
                     <a href={'Home'} className="col-md-3 text-reset text-uppercase d-flex align-items-center">
-                        <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" alt="Logo OST Ingenieria" className="img-logo" style={{ width: '70%', height: '70%' }} />
+                        <img src="/resources/ost-ing.png" alt="Logo OST Ingenieria" className="img-logo" style={{ width: '70%', height: '70%' }} />
                     </a>
                     <ul className="col-md-3 list-unstyled">
                         <li className="font-weight-bold text-uppercase">Resource</li>
