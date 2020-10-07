@@ -1,6 +1,5 @@
-import React, { Component, useState } from 'react';
-import { Navbar, NavDropdown, Nav, Button, Carousel, CardDeck, Card, Image, Form } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
+import React from 'react';
+import { Image } from 'react-bootstrap';
 import FooterOST from './Footer/FooterOST';
 import NavbarOST from './Navbar/NavbarOST';
 import Pulse from 'react-reveal/Pulse';

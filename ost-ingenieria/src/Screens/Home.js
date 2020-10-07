@@ -1,10 +1,7 @@
 import React, { Component, useState } from 'react';
-import { Navbar, NavDropdown, Nav, Button, Carousel, CardDeck, Card, Image, Form } from 'react-bootstrap';
+import { Button, Carousel, CardDeck, Card, Image, Form } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
-import SobreNosotros from './SobreNosotros';
 import NavbarOST from './Navbar/NavbarOST';
-import { SocialIcon } from 'react-social-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
 import FooterOST from './Footer/FooterOST';
@@ -67,15 +64,11 @@ class Home extends Component {
       <React.Fragment>
          
         <div>
-<<<<<<< HEAD
           <NavbarOST />
-=======
-         <NavbarOST/>
->>>>>>> 347d82766f3fc0847402922acb4b7d95e4abadde
         </div>
         
         
-        <section className="mt-5">
+        <section>
           <div>
             <ControlledCarousel />
           </div>
@@ -99,8 +92,8 @@ class Home extends Component {
 
               <Fade right>
                 <div className="col-md-6">
-                  <div className="content-right" >
-                    <img src="https://static.wixstatic.com/media/a0de8a_57fc56362d5d419d9606cf1eb88d061e~mv2.png/v1/fill/w_308,h_150,al_c,q_85,usm_0.66_1.00_0.01/Elegido.webp" style={{ width: '80%' }} />
+                  <div className="d-flex justify-content-center ml-5 mt-5" >
+                    <Image src="/resources/equipitos.jpeg" style={{width: '80%' }} />
                   </div>
                 </div>
               </Fade>
@@ -110,11 +103,7 @@ class Home extends Component {
 
         </section>
 
-<<<<<<< HEAD
         <section style={{ background: '#3D3F47' }}>
-=======
-        <section style={{ background: '#252440' }}>
->>>>>>> 347d82766f3fc0847402922acb4b7d95e4abadde
           <div className="container p-4">
             <Fade left>
               <div className="d-flex justify-content-center" style={{}}>
