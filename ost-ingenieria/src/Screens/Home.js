@@ -29,7 +29,7 @@ function ControlledCarousel() {
       <Carousel.Item style={{ height: 500 }}>
         <img
           className="d-block w-100"
-          src="https://cdn.pixabay.com/photo/2014/08/05/03/19/bulldozer-410118_960_720.jpg"
+          src="/resources/paneles.jpg"
           alt="Second slide"
         />
 
@@ -41,7 +41,7 @@ function ControlledCarousel() {
       <Carousel.Item style={{ height: 500 }}>
         <img
           className="d-block w-100"
-          src="https://estaticos.qdq.com/coverphotos/121/738/0000.jpeg"
+          src="/resources/topografo.jpg"
           alt="Third slide"
         />
 
@@ -50,6 +50,18 @@ function ControlledCarousel() {
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item style={{ height: 500 }}>
+        <img
+          className="d-block w-100"
+          src="/resources/panel-electrico.jpg"
+          alt="fourth slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
@@ -92,8 +104,8 @@ class Home extends Component {
 
               <Fade right>
                 <div className="col-md-6">
-                  <div className="d-flex justify-content-center ml-5 mt-5" >
-                    <Image src="/resources/equipitos.jpeg" style={{width: '80%' }} />
+                  <div className="d-flex justify-content-center ml-5 mt-6" >
+                    <Image src="/resources/ostnegro.png" style={{width: '80%' }} />
                   </div>
                 </div>
               </Fade>
@@ -114,11 +126,12 @@ class Home extends Component {
               <div className="mt-5">
                 <CardDeck style={{ borderColor: '' }}>
                   <Card>
-                    <Card.Img variant="top" src="https://i0.wp.com/www.bits.com.mx/wp-content/uploads/2016/10/Sistemas_Administrativos.jpg?fit=750%2C469&ssl=1" />
+                    <Card.Img variant="top" src="https://2.bp.blogspot.com/-6_KCeieik6k/Wt_henJOfxI/AAAAAAAAB_Q/9MkZKZ_kDAsKak9EDmOlo1pOw5UjwjEHwCLcBGAs/s750/Mantenimiento_Industrial.jpg" />
                     <Card.Body>
-                      <Card.Title>Gestión de Proyectos</Card.Title>
+                      <Card.Title>Instalaciones Electromecánicas</Card.Title>
                       <Card.Text>
-                        Nuestra propuesta de gestión de proyectos se fundamenta en poner a disposición de nuestros clientes personal y herramienta que manejan los alineamientos del PMI. Este servicio incluye calculo de cantidades de obras, análisis de riesgos, preparación de licitaciones y/o pliego de condiciones, servicios de oficina técnica, entre otros. Contamos con asesores certificados PMP.
+                      El servicio de instalaciones eléctricas que ofrecemos no solo se limita a las instalaciones industriales de media y baja tensión, en este apartado también incluimos los diseños de estas,hacemos instalaciones de sistemas de detección de incendios, sistemas CCTV, Data, megafonía, PLC, Centro de control de motores y más. <br/>
+                      Contamos con personal altamente calificado para trabajos de metalmecánica, sistemas de tuberías, instalaciones de ductos, maquinas rotativas y sistemas estáticos como filtros, chimeneas, ciclones, intercambiadores y tanques.
                 </Card.Text>
                       <Button variant="primary">Saber más</Button>
                     </Card.Body>
@@ -127,11 +140,11 @@ class Home extends Component {
                     </Card.Footer>
                   </Card>
                   <Card>
-                    <Card.Img variant="top" src="https://2.bp.blogspot.com/-_jyk_a-L8H8/Wc1YV7mGzVI/AAAAAAAAC4w/ZmRwb9_DoTIKcmNhclP2adHylNMi3mrjgCLcBGAs/s750/instalaciones_electricas.jpg" />
+                    <Card.Img variant="top" src="https://www.stanser.com/wp-content/uploads/2018/09/mecanizado-cnc3.jpg" />
                     <Card.Body>
-                      <Card.Title>Instalaciones Eléctricas-Instrumentación y Control</Card.Title>
+                      <Card.Title>Mecanizado CNC e Impresiones 3D</Card.Title>
                       <Card.Text>
-                        El servicio de instalaciones eléctricas que ofrecemos no solo se limita a las instalaciones industriales de media y baja tensión, en este apartado también incluimos, los diseños de estas, hacemos instalaciones de sistemas de detección de incendios, sistemas CCTV, Data, megafonía, PLC, Centro de control de motores y más.
+                      Contamos con talleres especializados en mecanizado con control numérico con modernas maquinas que ofrecen precisión y excelentes tiempos de ejecución de los requerimientos de nuestros clientes. Hacemos trabajos de impresión 3D en toda la gama de materiales posibles, principalmente PLA, Petg, Flex y otros.
         content.{' '}
                       </Card.Text>
                       <Button variant="primary">Saber más</Button>
@@ -141,11 +154,11 @@ class Home extends Component {
                     </Card.Footer>
                   </Card>
                   <Card>
-                    <Card.Img variant="top" src="https://2.bp.blogspot.com/-6_KCeieik6k/Wt_henJOfxI/AAAAAAAAB_Q/9MkZKZ_kDAsKak9EDmOlo1pOw5UjwjEHwCLcBGAs/s750/Mantenimiento_Industrial.jpg" />
+                    <Card.Img variant="top" src="https://4.bp.blogspot.com/-VVU3DZlgYxs/Wl9IUXHv8LI/AAAAAAAABbg/ivJpnfflbIEV05Echj2_frADJRwTXngDACLcBGAs/s750/Topografia.jpg" />
                     <Card.Body>
-                      <Card.Title>Instalaciones Mecánicas</Card.Title>
+                      <Card.Title>Topografía y Geolocalización</Card.Title>
                       <Card.Text>
-                        Contamos con personal altamente calificado para trabajos de metalmecánica, sistemas de tuberías, instalaciones de ductos, maquinas rotativas y sistemas estáticos como filtros, chimeneas, ciclones, intercambiadores y tanques.
+                      Ofrecemos outsourcing para control de obra y evaluación de impacto, seguimiento a planificación minera, inventario de materiales de acopio, levantamiento topográfico de minas a cielo abierto, asistencia por Dron y GPS.
               </Card.Text>
                       <Button variant="primary">Saber más</Button>
                     </Card.Body>
@@ -175,46 +188,7 @@ class Home extends Component {
                       <small className="text-muted">Last updated 3 mins ago</small>
                     </Card.Footer>
                   </Card>
-                  <Card>
-                    <Card.Img variant="top" src="https://2.bp.blogspot.com/-6_KCeieik6k/Wt_henJOfxI/AAAAAAAAB_Q/9MkZKZ_kDAsKak9EDmOlo1pOw5UjwjEHwCLcBGAs/s750/Mantenimiento_Industrial.jpg" />
-                    <Card.Body>
-                      <Card.Title>Mantenimiento Industrial & Refrigeración</Card.Title>
-                      <Card.Text>
-                        Somos un aliado perfecto para su organización haciendo que su personal se concentre únicamente en labores productivas, los trabajos de refrigeración suelen ser frecuentes tanto en la producción como los trabajos de oficina, es por eso que ponemos a su disposición nuestro cuerpo de técnicos que ofrecerán las soluciones técnicas y económicas mas factibles para su empresa o proyecto.
-        content.{' '}
-                      </Card.Text>
-                      <Button variant="primary">Saber más</Button>
-                    </Card.Body>
-                    <Card.Footer>
-                      <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img variant="top" src="https://www.stanser.com/wp-content/uploads/2018/09/mecanizado-cnc3.jpg" />
-                    <Card.Body>
-                      <Card.Title>Mecanizado CNC e Impresión 3D</Card.Title>
-                      <Card.Text>
-                        Contamos con talleres especializados en mecanizado con control numérico con modernas maquinas que ofrecen precisión y excelentes tiempos de ejecución de los requerimientos de nuestros clientes. Hacemos trabajos de impresión 3D en toda la gama de materiales posibles, principalmente PLA, Petg, Flex y otros.
-              </Card.Text>
-                      <Button variant="primary">Saber más</Button>
-                    </Card.Body>
-                    <Card.Footer>
-                      <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                  </Card>
-                  <Card>
-                    <Card.Img variant="top" src="https://perfiltopografia.es/wp-content/uploads/2017/12/geolocalizacion.jpg" />
-                    <Card.Body>
-                      <Card.Title>Servicios de Topografía y Geolocalización</Card.Title>
-                      <Card.Text>
-                        Ofrecemos outsourcing para Control de obra y evaluación de impacto, Seguimiento a planificación minera, inventario de materiales de acopio, levantamiento topográfico de minas a cielo abierto, asistencia por Dron y GPS.
-               </Card.Text>
-                      <Button variant="primary">Saber más</Button>
-                    </Card.Body>
-                    <Card.Footer>
-                      <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                  </Card>
+                
                 </CardDeck>
               </div>
             </Fade>
@@ -228,7 +202,7 @@ class Home extends Component {
               <Fade left>
                 <div className="col-md-6">
                   <div>
-                    <Image src="https://negokai.com/wp-content/uploads/2019/11/herramientas-para-crear-tormenta-ideas.jpg" fluid style={{ height: 400, width: 820, borderRadius: 10 }} />
+                    <Image src="/resources/mejores_soluciones.jpg" fluid style={{ height: 400, width: 820, borderRadius: 10 }} />
                   </div>
                 </div>
               </Fade>
@@ -261,7 +235,7 @@ class Home extends Component {
           </div>
         </section>
 
-        <section style={{ background: '#252440' }}>
+        <section style={{ background: '#3D3F47' }}>
           <div className="container py-5">
 
           </div>
