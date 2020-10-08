@@ -12,9 +12,13 @@ const SobreNosotros = () => {
                 <NavbarOST />
             </div>
 
-            <section className="mt-5 py-5">
+            <section className="mt-5">
 
                 <div className="container mt-5">
+
+                    <div style={{marginBottom:50, marginLeft:40}} className="text-center">
+                        <h1 className="display-4 text-center" style={{fontSize:50}}>Nuestro Equipo:</h1>
+                    </div>
 
                     <div className="d-flex justify-content-center">
                         <div className="ml-5 row justify-content-center h-100 col-sm-8 align-self-center text-center col-lg-6">
@@ -55,7 +59,7 @@ const SobreNosotros = () => {
 
                             <div >
                                 <h3>Angela Cepeda, CFO</h3>
-                                <p style={{ textAlign: 'justify', fontSize: 14 }}>Lic. Contabilidad por la Universidad Tecnologica UTESA. <br/>
+                                <p style={{ textAlign: 'justify', fontSize: 14 }}>Lic. Contabilidad por la Universidad Tecnologica UTESA. <br />
                                 Experta en asuntos financieros, presupuestos y asesora tributaria. Fundadora de AM&C Soluciones, empresa dedicada al financiamiento de automóviles e inmuebles.
                                     </p>
 
@@ -116,14 +120,14 @@ const SobreNosotros = () => {
                                 </p>
 
                                 <div className="d-flex justify-content-center">
-                                <div className="d-flex justify-content">
-                                    <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 35 }} />
-                                    <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }}>(829) 566-4182</p>
-                                </div>
-                                <div className="d-flex justify-content">
-                                    <FontAwesomeIcon icon={faEnvelope} style={{marginLeft:10, color: '#f57c00', fontSize: 35 }} />
-                                    <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }} > grissel21@hotmail.com </p>
-                                </div>
+                                    <div className="d-flex justify-content">
+                                        <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 35 }} />
+                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }}>(829) 566-4182</p>
+                                    </div>
+                                    <div className="d-flex justify-content">
+                                        <FontAwesomeIcon icon={faEnvelope} style={{ marginLeft: 10, color: '#f57c00', fontSize: 35 }} />
+                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }} > grissel21@hotmail.com </p>
+                                    </div>
                                 </div>
 
                             </div>
@@ -141,15 +145,15 @@ const SobreNosotros = () => {
                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                                </p>
 
-                               <div className="d-flex justify-content-center">
-                                <div className="d-flex justify-content">
-                                    <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 35 }} />
-                                    <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }}>(829) 730-1225</p>
-                                </div>
-                                <div className="d-flex justify-content">
-                                    <FontAwesomeIcon icon={faEnvelope} style={{marginLeft:5, color: '#f57c00', fontSize: 35 }} />
-                                    <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }} > yancarlosmorales@hotmail.com </p>
-                                </div>
+                                <div className="d-flex justify-content-center">
+                                    <div className="d-flex justify-content">
+                                        <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 35 }} />
+                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }}>(829) 730-1225</p>
+                                    </div>
+                                    <div className="d-flex justify-content">
+                                        <FontAwesomeIcon icon={faEnvelope} style={{ marginLeft: 5, color: '#f57c00', fontSize: 35 }} />
+                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }} > yancarlosmorales@hotmail.com </p>
+                                    </div>
                                 </div>
 
 
