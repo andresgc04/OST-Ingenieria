@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Image } from 'react-bootstrap';
-import NavbarOST from './Navbar/NavbarOST';
+import NavbarOSTOficial from './Navbar/NavbarOSTOficial';
 import FooterOST from './Footer/FooterOST';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneSquareAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +9,7 @@ const SobreNosotros = () => {
     return (
         <React.Fragment>
             <div>
-                <NavbarOST />
+                <NavbarOSTOficial/>
             </div>
 
             <section className="mt-5">

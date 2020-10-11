@@ -3,45 +3,15 @@ import { Button, Carousel,Form } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
-import NavbarOST from './Navbar/NavbarOST';
+import NavbarOSTOficial from './Navbar/NavbarOSTOficial';
 import FooterOST from './Footer/FooterOST';
-
-function ControlledCarousel() {
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
-    };
-
-    return (
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item style={{ height: 500 }}>
-                <img
-                    className="d-block w-100"
-                    src="https://concepto.de/wp-content/uploads/2018/04/arquitectura-plano-e1523469843305.jpeg"
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                    <h1 style={{ color: "red", fontSize: 64 }}>OST INGENIERÍA</h1>
-                    <h2 style={{ color: "red" }}>Oficina de Servicios Técnicos de Ingeniería</h2>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
-    );
-}
 
 const Contactos = () => {
     return (
         <React.Fragment>
             <div>
-                <NavbarOST />
+                <NavbarOSTOficial/>
             </div>
-
-            <section className="mt-5">
-                <div>
-                    <ControlledCarousel />
-                </div>
-            </section>
 
             <section style={{ background: 'white' }}>
                 <div className="container py-5">

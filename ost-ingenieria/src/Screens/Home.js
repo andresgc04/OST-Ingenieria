@@ -1,11 +1,12 @@
-import React, { Component, useState } from 'react';
-import { Button, Carousel, CardDeck, Card, Image, Form } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Button, Carousel, Image, Form } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import NavbarOST from './Navbar/NavbarOST';
+import NavbarOSTOficial from './Navbar/NavbarOSTOficial';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
 import FooterOST from './Footer/FooterOST';
-import { Link } from 'react-router-dom';
+import '../styles/styles.css';
+import '../styles/card-style.css';
 
 
 function ControlledCarousel() {
@@ -21,7 +22,7 @@ function ControlledCarousel() {
         <img
           className="d-block w-100"
           src="https://centrocomercialvirtual.net/wp-content/uploads/2020/04/wire-1098059_1280.jpg"
-          alt="First slide"
+          alt=""
         />
         <Carousel.Caption>
           <h3 style={{ color: "white", fontSize: 36 }}>OST INGENIERÍA </h3>
@@ -32,7 +33,7 @@ function ControlledCarousel() {
         <img
           className="d-block w-100"
           src="/resources/paneles.jpg"
-          alt="Second slide"
+          alt=""
         />
 
         <Carousel.Caption>
@@ -44,7 +45,7 @@ function ControlledCarousel() {
         <img
           className="d-block w-100"
           src="/resources/topografo.jpg"
-          alt="Third slide"
+          alt=""
         />
 
         <Carousel.Caption>
@@ -58,7 +59,7 @@ function ControlledCarousel() {
         <img
           className="d-block w-100"
           src="/resources/panel-electrico.jpg"
-          alt="fourth slide"
+          alt=""
         />
 
         <Carousel.Caption>
@@ -77,15 +78,15 @@ const Home = (props) => {
     <React.Fragment>
 
       <div>
-        <NavbarOST />
+        <NavbarOSTOficial />
       </div>
 
 
-      <section>
+{/*       <section>
         <div>
           <ControlledCarousel />
         </div>
-      </section>
+      </section> */}
 
       <section id="sobreNosotros" style={{ background: 'white' }}>
         <div className="container mt-5">
@@ -105,8 +106,8 @@ const Home = (props) => {
 
             <Fade right>
               <div className="col-md-6">
-                <div className="d-flex justify-content-center ml-5 mb-5" style={{marginRight:-60}}>
-                  <Image src="/resources/ostnegro.png" style={{ width: '80%'}} />
+                <div className="d-flex justify-content-center ml-5 mb-5">
+                  <Image src="/resources/ostnegro.png" style={{ width: '80%' }} />
                 </div>
               </div>
             </Fade>
@@ -117,80 +118,69 @@ const Home = (props) => {
       </section>
 
       <section style={{ background: '#3D3F47' }}>
-        <div className="container p-4">
+        <div className="container p-5">
           <Fade left>
-            <div className="d-flex justify-content-center" style={{}}>
-              <h1 className="display-4 mt-5" style={{ color: 'white' }}>Nuestros Servicios</h1>
+            <div className="d-flex justify-content-center" style={{marginBottom:-40}}>
+              <h1 className="display-4 mt-3" style={{ color: 'white' }}>Nuestros Servicios</h1>
             </div>
           </Fade>
           <Fade right>
-            <div className="mt-5">
-              <CardDeck style={{ borderColor: '' }}>
-                <Card>
-                  <Card.Img variant="top" src="https://2.bp.blogspot.com/-6_KCeieik6k/Wt_henJOfxI/AAAAAAAAB_Q/9MkZKZ_kDAsKak9EDmOlo1pOw5UjwjEHwCLcBGAs/s750/Mantenimiento_Industrial.jpg" />
-                  <Card.Body>
-                    <Card.Title>Instalaciones Electromecánicas</Card.Title>
-                    <Card.Text>
-                      El servicio de instalaciones eléctricas que ofrecemos no solo se limita a las instalaciones industriales de media y baja tensión, en este apartado también incluimos los diseños de estas,hacemos instalaciones de sistemas de detección de incendios, sistemas CCTV, Data, megafonía, PLC, Centro de control de motores y más. <br />
-                      Contamos con personal altamente calificado para trabajos de metalmecánica, sistemas de tuberías, instalaciones de ductos, maquinas rotativas y sistemas estáticos como filtros, chimeneas, ciclones, intercambiadores y tanques.
-                </Card.Text>
-                    <Button variant="primary">Saber más</Button>
-                  </Card.Body>
-                  <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                  </Card.Footer>
-                </Card>
-                <Card>
-                  <Card.Img variant="top" src="https://www.stanser.com/wp-content/uploads/2018/09/mecanizado-cnc3.jpg" />
-                  <Card.Body>
-                    <Card.Title>Mecanizado CNC e Impresiones 3D</Card.Title>
-                    <Card.Text>
-                      Contamos con talleres especializados en mecanizado con control numérico con modernas maquinas que ofrecen precisión y excelentes tiempos de ejecución de los requerimientos de nuestros clientes. Hacemos trabajos de impresión 3D en toda la gama de materiales posibles, principalmente PLA, Petg, Flex y otros.
-        content.{' '}
-                    </Card.Text>
-                    <Button variant="primary">Saber más</Button>
-                  </Card.Body>
-                  <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                  </Card.Footer>
-                </Card>
-                <Card>
-                  <Card.Img variant="top" src="https://4.bp.blogspot.com/-VVU3DZlgYxs/Wl9IUXHv8LI/AAAAAAAABbg/ivJpnfflbIEV05Echj2_frADJRwTXngDACLcBGAs/s750/Topografia.jpg" />
-                  <Card.Body>
-                    <Card.Title>Topografía y Geolocalización</Card.Title>
-                    <Card.Text>
-                      Ofrecemos outsourcing para control de obra y evaluación de impacto, seguimiento a planificación minera, inventario de materiales de acopio, levantamiento topográfico de minas a cielo abierto, asistencia por Dron y GPS.
-              </Card.Text>
-                    <Button variant="primary">Saber más</Button>
-                  </Card.Body>
-                  <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                  </Card.Footer>
-                </Card>
+            <div className="container-fluid d-flex justify-content-center">
+              <div className="row">
 
-              </CardDeck>
-            </div>
-          </Fade>
+                <div className="col-md-4">
+                  <div className="card text-center shadow">
+                    <div className="overflow">
+                      <img style={{ blockSize: 220 }} src="/resources/RevisionInstalacionElectrica.jpg" alt="InstalacionesElectromecanicas" className="card-img-top" />
+                    </div>
+                    <div className="card-body text-dark">
+                      <h4 className="card-title">Instalaciones Electromecánicas</h4>
+                      <p className="card-text text-secondary">
+                        El servicio de instalaciones electromecánicas que ofrecemos no solo se limita
+                        a las instalaciones industriales de media y baja tensión, 
+                        también incorporamos los diseños correspondientes a este apartado.
+                      </p>
+                      <a href="#" className="btn btn-outline-primary">Go Anywhere</a>
+                    </div>
+                  </div>
+                </div>
 
-          <Fade left>
-            <div className="mt-5 ">
-              <CardDeck>
-                <Card>
-                  <Card.Img variant="top" src="https://www.tecnoseguro.com/media/k2/items/cache/60959e8d8c34f5c00b9627dfd768f462_L.jpg" style={{ height: '32%' }} />
-                  <Card.Body>
-                    <Card.Title>Sistemas Detección de Incendios</Card.Title>
-                    <Card.Text>
-                      This is a wider card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.
-                </Card.Text>
-                    <Button variant="primary">Saber más</Button>
-                  </Card.Body>
-                  <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                  </Card.Footer>
-                </Card>
+                <div className="col-md-4">
+                  <div className="card text-center shadow">
+                    <div className="overflow">
+                      <img style={{ blockSize: 220 }} src="/resources/Topografia.jpeg" alt="Topografia" className="card-img-top" />
+                    </div>
+                    <div className="card-body text-dark">
+                      <h4 className="card-title">Topografía</h4>
+                      <p className="card-text text-secondary">
+                        Ofrecemos outsourcing para Control de obra y evaluación de impacto,
+                        Seguimiento a planificación minera, inventario de materiales de acopio,
+                        levantamiento topográfico de minas a cielo abierto y asistencia por Dron y GPS.
+                      </p>
+                      <a href="#" className="btn btn-outline-primary">Go Anywhere</a>
+                    </div>
+                  </div>
+                </div>
 
-              </CardDeck>
+                <div className="col-md-4">
+                  <div className="card text-center shadow">
+                    <div className="overflow">
+                      <img style={{ blockSize: 220 }} src="/resources/MecanizadoCNC2.jpg" alt="MecanizadoCNC" className="card-img-top" />
+                    </div>
+                    <div className="card-body text-dark">
+                      <h4 className="card-title">Mecanizado CNC</h4>
+                      <p className="card-text text-secondary">
+                        Contamos con talleres especializados en mecanizado con control 
+                        numérico con modernas maquinas que ofrecen precisión y excelentes 
+                        tiempos de ejecución de los requerimientos de nuestros clientes. 
+                        Hacemos trabajos de impresión 3D.
+                      </p>
+                      <a href="#" className="btn btn-outline-primary">Go Anywhere</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </Fade>
         </div>
@@ -226,8 +216,8 @@ const Home = (props) => {
                     productores de materiales que están completamente identificado con nuestras políticas de seguridad,
                     calidad y protección al medioambiente.
                   </p>
-                    <a href={'SobreNosotros'} className="btn btn-outline-primary">Más sobre nosotros</a>
-                    
+                  <a href={'SobreNosotros'} className="btn btn-outline-primary">Más sobre nosotros</a>
+
                 </div>
               </div>
             </Fade>
@@ -235,9 +225,37 @@ const Home = (props) => {
         </div>
       </section>
 
-      <section style={{ background: '#3D3F47' }}>
-        <div className="container py-5">
+      <section style={{ background: '#3D3F47' }} className="mt-5">
 
+        <div className="container p-5">
+          <h1 style={{ marginBottom: -60 }} className="text-white d-flex justify-content-center display-4 ">Nuestros Clientes</h1>
+        </div>
+
+        <div className="wrapper">
+          <div className="sliderClient">
+            <div className="slideClient">
+              <img src="/resources/MicrotekMedical.png" alt="" />
+              <img src="/resources/ParqueIndustrialDuarte.png" alt="" />
+              <img src="/resources/JCE.png" alt="" />
+              <img src="/resources/SigmaPlast.png" alt="" />
+              <img src="/resources/Inprotect.png" alt="" />
+              <img src="/resources/MicrotekMedical.png" alt="" />
+              <img src="/resources/ParqueIndustrial.png" alt="" />
+              <img src="/resources/JCE.png" alt="" />
+              <img src="/resources/SigmaPlast.png" alt="" />
+              <img src="/resources/Inprotect.png" alt="" />
+              <img src="/resources/MicrotekMedical.png" alt="" />
+              <img src="/resources/ParqueIndustrial.png" alt="" />
+              <img src="/resources/JCE.png" alt="" />
+              <img src="/resources/SigmaPlast.png" alt="" />
+              <img src="/resources/Inprotect.png" alt="" />
+              <img src="/resources/MicrotekMedical.png" alt="" />
+              <img src="/resources/ParqueIndustrial.png" alt="" />
+              <img src="/resources/JCE.png" alt="" />
+              <img src="/resources/SigmaPlast.png" alt="" />
+              <img src="/resources/Inprotect.png" alt="" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -267,7 +285,7 @@ const Home = (props) => {
                       <Form.Control as="textarea" rows="3" />
                     </Form.Group>
 
-                    <Button variant="primary" type="submit">
+                    <Button variant="outline-primary" type="submit">
                       Enviar
                     </Button>
                   </Form>
