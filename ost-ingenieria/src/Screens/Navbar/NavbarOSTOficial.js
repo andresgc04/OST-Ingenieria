@@ -48,7 +48,7 @@ const NavbarOSTOficial = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/resources/rascacielos.jpg"
+                        src="/resources/tester1.jpg"
                         alt="rascacielos"
                     />
                     <Carousel.Caption>
@@ -60,7 +60,7 @@ const NavbarOSTOficial = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/resources/trabajo.jpg"
+                        src="/resources/paneles_II.jpg"
                         alt="Third slide"
                     />
 
