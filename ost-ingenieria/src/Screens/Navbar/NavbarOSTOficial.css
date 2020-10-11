@@ -35,7 +35,7 @@
 }
 
 .navbar-nav a{
-    font-family: consolas;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
