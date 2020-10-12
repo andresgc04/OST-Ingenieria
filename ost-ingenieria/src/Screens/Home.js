@@ -21,7 +21,7 @@ function ControlledCarousel() {
       <Carousel.Item style={{ height: 500 }}>
         <img
           className="d-block w-100"
-          src="https://centrocomercialvirtual.net/wp-content/uploads/2020/04/wire-1098059_1280.jpg"
+          src="/resources/instalaciones.jpg"
           alt=""
         />
         <Carousel.Caption>
@@ -58,7 +58,7 @@ function ControlledCarousel() {
       <Carousel.Item style={{ height: 500 }}>
         <img
           className="d-block w-100"
-          src="/resources/panel-electrico.jpg"
+          src="/resources/instalaciones.jpg"
           alt=""
         />
 
@@ -131,7 +131,7 @@ const Home = (props) => {
                 <div className="col-md-4">
                   <div className="card text-center shadow">
                     <div className="overflow">
-                      <img style={{ blockSize: 220 }} src="/resources/RevisionInstalacionElectrica.jpg" alt="InstalacionesElectromecanicas" className="card-img-top" />
+                      <img style={{ blockSize: 220 }} src="/resources/bombas1.jpg" alt="InstalacionesElectromecanicas" className="card-img-top" />
                     </div>
                     <div className="card-body text-dark">
                       <h4 className="card-title">Instalaciones Electromecánicas</h4>
@@ -140,7 +140,7 @@ const Home = (props) => {
                         a las instalaciones industriales de media y baja tensión, 
                         también incorporamos los diseños correspondientes a este apartado.
                       </p>
-                      <a href="#" className="btn btn-outline-primary">Go Anywhere</a>
+                      <a href="#" className="btn btn-outline-primary">Saber más</a>
                     </div>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ const Home = (props) => {
                 <div className="col-md-4">
                   <div className="card text-center shadow">
                     <div className="overflow">
-                      <img style={{ blockSize: 220 }} src="/resources/Topografia.jpeg" alt="Topografia" className="card-img-top" />
+                      <img style={{ blockSize: 220 }} src="/resources/Topografia1.jpg" alt="Topografia" className="card-img-top" />
                     </div>
                     <div className="card-body text-dark">
                       <h4 className="card-title">Topografía</h4>
@@ -157,7 +157,7 @@ const Home = (props) => {
                         Seguimiento a planificación minera, inventario de materiales de acopio,
                         levantamiento topográfico de minas a cielo abierto y asistencia por Dron y GPS.
                       </p>
-                      <a href="#" className="btn btn-outline-primary">Go Anywhere</a>
+                      <a href="#" className="btn btn-outline-primary">Saber más</a>
                     </div>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ const Home = (props) => {
                 <div className="col-md-4">
                   <div className="card text-center shadow">
                     <div className="overflow">
-                      <img style={{ blockSize: 220 }} src="/resources/MecanizadoCNC2.jpg" alt="MecanizadoCNC" className="card-img-top" />
+                      <img style={{ blockSize: 220 }} src="/resources/CNC.jpg" alt="MecanizadoCNC" className="card-img-top" />
                     </div>
                     <div className="card-body text-dark">
                       <h4 className="card-title">Mecanizado CNC</h4>
@@ -175,7 +175,7 @@ const Home = (props) => {
                         tiempos de ejecución de los requerimientos de nuestros clientes. 
                         Hacemos trabajos de impresión 3D.
                       </p>
-                      <a href="#" className="btn btn-outline-primary">Go Anywhere</a>
+                      <a href="#" className="btn btn-outline-primary">Saber más</a>
                     </div>
                   </div>
                 </div>
@@ -239,21 +239,28 @@ const Home = (props) => {
               <img src="/resources/JCE.png" alt="" />
               <img src="/resources/SigmaPlast.png" alt="" />
               <img src="/resources/Inprotect.png" alt="" />
+              <img src="/resources/AMYC.png" alt="" />
               <img src="/resources/MicrotekMedical.png" alt="" />
               <img src="/resources/ParqueIndustrial.png" alt="" />
               <img src="/resources/JCE.png" alt="" />
               <img src="/resources/SigmaPlast.png" alt="" />
+              <img src="/resources/Metalmecanica.png" alt="" />
+              <img src="/resources/Inprotect.png" alt="" />
+              <img src="/resources/AMYC.png" alt="" />
+              <img src="/resources/MicrotekMedical.png" alt="" />
+              <img src="/resources/ParqueIndustrial.png" alt="" />
+              <img src="/resources/JCE.png" alt="" />
+              <img src="/resources/Metalmecanica.png" alt="" />
+              <img src="/resources/SigmaPlast.png" alt="" />
               <img src="/resources/Inprotect.png" alt="" />
               <img src="/resources/MicrotekMedical.png" alt="" />
+              <img src="/resources/Metalmecanica.png" alt="" />
               <img src="/resources/ParqueIndustrial.png" alt="" />
               <img src="/resources/JCE.png" alt="" />
               <img src="/resources/SigmaPlast.png" alt="" />
               <img src="/resources/Inprotect.png" alt="" />
-              <img src="/resources/MicrotekMedical.png" alt="" />
-              <img src="/resources/ParqueIndustrial.png" alt="" />
-              <img src="/resources/JCE.png" alt="" />
-              <img src="/resources/SigmaPlast.png" alt="" />
-              <img src="/resources/Inprotect.png" alt="" />
+              <img src="/resources/AMYC.png" alt="" />
+              <img src="/resources/Metalmecanica.png" alt="" />
             </div>
           </div>
         </div>
@@ -271,7 +278,7 @@ const Home = (props) => {
                 <div className="mt-5 mr-5">
                   <Form>
                     <Form.Group controlId="exampleForm.ControlInput1">
-                      <Form.Label>Correo Electrónico:</Form.Label>
+                      <Form.Label>Correo electrónico:</Form.Label>
                       <Form.Control type="email" placeholder="nombre@ejemplo.com" />
                     </Form.Group>
 
@@ -300,9 +307,9 @@ const Home = (props) => {
                   <h1 className="display-4 ml-3" style={{ fontSize: 28 }}>Encuéntrenos en la oficina</h1>
                 </div>
                 <div className="ml-5">
-                  <p>Estamos ubicados en Av. Pdte. Vasquez 17, <br />
+                  <p>Estamos ubicados en Av. Pdte. Vásquez 17, <br />
                   Esq. Juan Isidro Jiménez, Alma Rosa, <br />
-                  Santo Domingo Este.</p>
+                  Santo Domingo Este, Rep. Dom.</p>
                 </div>
 
                 <div className="d-flex justify-content mt-5">
@@ -310,8 +317,8 @@ const Home = (props) => {
                   <h1 className="display-4 ml-3" style={{ fontSize: 28 }}>Danos una llamada</h1>
                 </div>
                 <div className="ml-5">
-                  <p>Oficina: (809) 595-9401, <br />
-                    Celular: (809) 975-8958.<br />
+                  <p>Oficina: (809) 595-9401. <br />
+                    Móvil:      (809) 975-8958.<br />
                   </p>
                 </div>
               </Fade>

@@ -141,6 +141,7 @@ const Clientes = () => {
             <section className="mt-5">
                 <div className="container">
                     <div className="row">
+                        
 
                         <Fade left>
                             <div className="col-md-6 my-auto">
@@ -152,8 +153,8 @@ const Clientes = () => {
 
                         <Fade right>
                             <div className="col-md-6 my-auto">
-                                <div className="d-flex justify-content-center ml-2 mb-5">
-                                    <h1 className="display-4">AM&C Soluciones</h1>
+                                <div className="d-flex justify-content-center ml-2">
+                                <Image src="/resources/AMYC.png" alt="AMYC" />
                                 </div>
                             </div>
                         </Fade>
@@ -169,7 +170,7 @@ const Clientes = () => {
                         <Fade left>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2">
-                                    <h1 className="display-4" style={{ fontSize: 35 }}>METALMECANICA <br /> Punta Caucedo</h1>
+                                <Image src="/resources/metalmecanica.png" alt="metalmecanica" />
                                 </div>
                             </div>
                         </Fade>

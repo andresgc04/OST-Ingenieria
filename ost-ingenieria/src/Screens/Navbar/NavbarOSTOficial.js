@@ -48,11 +48,11 @@ const NavbarOSTOficial = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/resources/tester1.jpg"
+                        src="/resources/instalaciones.jpg"
                         alt="rascacielos"
                     />
                     <Carousel.Caption>
-                        <Bounce left><h3 className="animated bounceInLeft">First slide label</h3></Bounce>
+                        <Bounce left><h3 style={{ color: ''  }} className="animated bounceInLeft">Instalaciones Electromecánica</h3></Bounce>
                         
                         <Bounce rigth><p><a href="#">Contacto</a></p></Bounce>
                     </Carousel.Caption>
@@ -65,20 +65,20 @@ const NavbarOSTOficial = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 style={{ color: 'black'  }} ></h3>
+                        <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/resources/Desing.jpg"
+                        src="/resources/3d.jpg"
                         alt="Third slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3> Impresiones 3D totalmente garantizadas</h3>
+                        <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

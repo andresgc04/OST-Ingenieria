@@ -114,19 +114,18 @@ const SobreNosotros = () => {
                             </div>
 
                             <div>
-                                <h3>Henderson Montero, CFO</h3>
-                                <p style={{ textAlign: 'left', fontSize: 14 }}>Lic. Contabilidad por la Universidad Tecnologica UTESA.
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                <h3>Henderson Montero</h3>
+                                <p style={{ textAlign: 'left', fontSize: 14 }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                                 </p>
 
                                 <div className="d-flex justify-content-center">
                                     <div className="d-flex justify-content">
                                         <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 35 }} />
-                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }}>(829) 566-4182</p>
+                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }}>(829) 447-1824</p>
                                     </div>
                                     <div className="d-flex justify-content">
                                         <FontAwesomeIcon icon={faEnvelope} style={{ marginLeft: 10, color: '#f57c00', fontSize: 35 }} />
-                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }} > grissel21@hotmail.com </p>
+                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }} > hendersonmontero@gmail.com </p>
                                     </div>
                                 </div>
 
@@ -139,10 +138,8 @@ const SobreNosotros = () => {
                             </div>
 
                             <div>
-                                <h3>Yancarlos Morales, HR</h3>
-                                <p style={{ textAlign: 'left', fontSize: 14 }}>Ing. Industrial por la Universidad Central del Este.
-                               <br />
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                <h3>Yancarlos Morales</h3>
+                                <p style={{ textAlign: 'left', fontSize: 14 }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                </p>
 
                                 <div className="d-flex justify-content-center">
