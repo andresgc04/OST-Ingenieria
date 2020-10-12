@@ -240,19 +240,21 @@ const Home = (props) => {
               <img src="/resources/SigmaPlast.png" alt="" />
               <img src="/resources/Inprotect.png" alt="" />
               <img src="/resources/AMYC.png" alt="" />
+              <img src="/resources/Metalmecanica.png" alt="" />
               <img src="/resources/MicrotekMedical.png" alt="" />
               <img src="/resources/ParqueIndustrial.png" alt="" />
               <img src="/resources/JCE.png" alt="" />
               <img src="/resources/SigmaPlast.png" alt="" />
-              <img src="/resources/Metalmecanica.png" alt="" />
               <img src="/resources/Inprotect.png" alt="" />
               <img src="/resources/AMYC.png" alt="" />
+              <img src="/resources/Metalmecanica.png" alt="" />
               <img src="/resources/MicrotekMedical.png" alt="" />
               <img src="/resources/ParqueIndustrial.png" alt="" />
               <img src="/resources/JCE.png" alt="" />
-              <img src="/resources/Metalmecanica.png" alt="" />
               <img src="/resources/SigmaPlast.png" alt="" />
               <img src="/resources/Inprotect.png" alt="" />
+              <img src="/resources/AMYC.png" alt="" />
+              <img src="/resources/Metalmecanica.png" alt="" />
               <img src="/resources/MicrotekMedical.png" alt="" />
               <img src="/resources/Metalmecanica.png" alt="" />
               <img src="/resources/ParqueIndustrial.png" alt="" />

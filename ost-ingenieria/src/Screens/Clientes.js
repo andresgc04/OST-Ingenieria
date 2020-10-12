@@ -154,7 +154,7 @@ const Clientes = () => {
                         <Fade right>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2">
-                                <Image src="/resources/AMYC.png" alt="AMYC" />
+                                <Image src="/resources/AMYC.png" alt="AMYC" style={{width:'60%'}}/>
                                 </div>
                             </div>
                         </Fade>
@@ -170,7 +170,7 @@ const Clientes = () => {
                         <Fade left>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2">
-                                <Image src="/resources/metalmecanica.png" alt="metalmecanica" />
+                                <Image src="/resources/metalmecanica.png" alt="metalmecanica" style={{width:'60%'}}/>
                                 </div>
                             </div>
                         </Fade>
