@@ -4,12 +4,19 @@ import Fade from 'react-reveal/Fade';
 import NavbarOSTOficial from './Navbar/NavbarOSTOficial';
 import FooterOST from './Footer/FooterOST';
 import '../styles/styles.css';
+import { Helmet } from 'react-helmet';
+
+const TITLE = 'Clientes | OST Ingeniería'
 
 const Clientes = () => {
     return (
         <React.Fragment>
+            <Helmet>
+                <title>{TITLE}</title>
+            </Helmet>
+
             <section>
-                <NavbarOSTOficial/>
+                <NavbarOSTOficial />
             </section>
 
             <section className="mt-5">
@@ -141,7 +148,7 @@ const Clientes = () => {
             <section className="mt-5">
                 <div className="container">
                     <div className="row">
-                        
+
 
                         <Fade left>
                             <div className="col-md-6 my-auto">
@@ -154,7 +161,7 @@ const Clientes = () => {
                         <Fade right>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2">
-                                <Image src="/resources/AMYC.png" alt="AMYC" style={{width:'60%'}}/>
+                                    <Image src="/resources/AMYC.png" alt="AMYC" style={{ width: '60%' }} />
                                 </div>
                             </div>
                         </Fade>
@@ -170,7 +177,7 @@ const Clientes = () => {
                         <Fade left>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2">
-                                <Image src="/resources/metalmecanica.png" alt="metalmecanica" style={{width:'60%'}}/>
+                                    <Image src="/resources/metalmecanica.png" alt="metalmecanica" style={{ width: '60%' }} />
                                 </div>
                             </div>
                         </Fade>

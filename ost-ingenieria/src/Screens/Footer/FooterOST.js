@@ -4,13 +4,13 @@ import { SocialIcon } from 'react-social-icons';
 const FooterOST = () => {
     return (
 
-        <footer className="bg-dark text-white py-5">
+        <footer className="bg-dark text-white py-1">
             <section>
-                <div className="container">
+                <div className="container mt-5">
 
                     <nav className="row">
                         <a href={'Home'} className="col-md-3 text-reset text-uppercase d-flex align-items-center">
-                            <img src="/resources/Logo-OST-PNG.png" alt="Logo OST Ingenieria" className="img-logo" style={{ height: 150, width: 150 }} />
+                            <img src="/resources/Logo-OST-PNG.png" alt="Logo OST Ingenieria" className="img-logo" style={{ width:'60%' }} />
                         </a>
                         <ul className="col-md-3 list-unstyled">
                             <li className="font-weight-bold text-uppercase">Menú</li>

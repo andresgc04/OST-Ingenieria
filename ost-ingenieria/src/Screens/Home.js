@@ -7,7 +7,9 @@ import { faMapMarkerAlt, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-ic
 import FooterOST from './Footer/FooterOST';
 import '../styles/styles.css';
 import '../styles/card-style.css';
+import { Helmet } from 'react-helmet';
 
+const TITLE = 'Inicio | OST Ingeniería'
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -77,16 +79,13 @@ const Home = (props) => {
   return (
     <React.Fragment>
 
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
+
       <div>
         <NavbarOSTOficial />
       </div>
-
-
-{/*       <section>
-        <div>
-          <ControlledCarousel />
-        </div>
-      </section> */}
 
       <section id="sobreNosotros" style={{ background: 'white' }}>
         <div className="container mt-5">
@@ -120,7 +119,7 @@ const Home = (props) => {
       <section style={{ background: '#3D3F47' }}>
         <div className="container p-5">
           <Fade left>
-            <div className="d-flex justify-content-center" style={{marginBottom:-40}}>
+            <div className="d-flex justify-content-center" style={{ marginBottom: -40 }}>
               <h1 className="display-4 mt-3" style={{ color: 'white' }}>Nuestros Servicios</h1>
             </div>
           </Fade>
@@ -137,10 +136,10 @@ const Home = (props) => {
                       <h4 className="card-title">Instalaciones Electromecánicas</h4>
                       <p className="card-text text-secondary">
                         El servicio de instalaciones electromecánicas que ofrecemos no solo se limita
-                        a las instalaciones industriales de media y baja tensión, 
+                        a las instalaciones industriales de media y baja tensión,
                         también incorporamos los diseños correspondientes a este apartado.
                       </p>
-                      <a href="#" className="btn btn-outline-primary">Saber más</a>
+                      <a href="#" className="btn btn-outline-success">Saber más</a>
                     </div>
                   </div>
                 </div>
@@ -157,7 +156,7 @@ const Home = (props) => {
                         Seguimiento a planificación minera, inventario de materiales de acopio,
                         levantamiento topográfico de minas a cielo abierto y asistencia por Dron y GPS.
                       </p>
-                      <a href="#" className="btn btn-outline-primary">Saber más</a>
+                      <a href="#" className="btn btn-outline-success">Saber más</a>
                     </div>
                   </div>
                 </div>
@@ -170,12 +169,12 @@ const Home = (props) => {
                     <div className="card-body text-dark">
                       <h4 className="card-title">Mecanizado CNC</h4>
                       <p className="card-text text-secondary">
-                        Contamos con talleres especializados en mecanizado con control 
-                        numérico con modernas maquinas que ofrecen precisión y excelentes 
-                        tiempos de ejecución de los requerimientos de nuestros clientes. 
+                        Contamos con talleres especializados en mecanizado con control
+                        numérico con modernas maquinas que ofrecen precisión y excelentes
+                        tiempos de ejecución de los requerimientos de nuestros clientes.
                         Hacemos trabajos de impresión 3D.
                       </p>
-                      <a href="#" className="btn btn-outline-primary">Saber más</a>
+                      <a href="#" className="btn btn-outline-success">Saber más</a>
                     </div>
                   </div>
                 </div>
@@ -216,7 +215,7 @@ const Home = (props) => {
                     productores de materiales que están completamente identificado con nuestras políticas de seguridad,
                     calidad y protección al medioambiente.
                   </p>
-                  <a href={'SobreNosotros'} className="btn btn-outline-primary">Más sobre nosotros</a>
+                  <a href={'SobreNosotros'} className="btn btn-outline-success">Más sobre nosotros</a>
 
                 </div>
               </div>
@@ -294,7 +293,7 @@ const Home = (props) => {
                       <Form.Control as="textarea" rows="3" />
                     </Form.Group>
 
-                    <Button variant="outline-primary" type="submit">
+                    <Button variant="outline-success" type="submit">
                       Enviar
                     </Button>
                   </Form>

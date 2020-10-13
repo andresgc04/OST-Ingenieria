@@ -4,20 +4,28 @@ import NavbarOSTOficial from './Navbar/NavbarOSTOficial';
 import FooterOST from './Footer/FooterOST';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneSquareAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Helmet } from 'react-helmet';
+
+const TITLE = 'Nosotros | OST Ingeniería'
 
 const SobreNosotros = () => {
     return (
         <React.Fragment>
+
+            <Helmet>
+                <title>{TITLE}</title>
+            </Helmet>
+
             <div>
-                <NavbarOSTOficial/>
+                <NavbarOSTOficial />
             </div>
 
             <section className="mt-5">
 
                 <div className="container mt-5">
 
-                    <div style={{marginBottom:50, marginLeft:40}} className="text-center">
-                        <h1 className="display-4 text-center" style={{fontSize:50}}>Nuestro Equipo:</h1>
+                    <div style={{ marginBottom: 50, marginLeft: 40 }} className="text-center">
+                        <h1 className="display-4 text-center" style={{ fontSize: 50 }}>Nuestro Equipo:</h1>
                     </div>
 
                     <div className="d-flex justify-content-center">
@@ -115,7 +123,7 @@ const SobreNosotros = () => {
 
                             <div>
                                 <h3>Henderson Montero</h3>
-                                <p style={{ textAlign: 'left', fontSize: 14 }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                <p style={{ textAlign: 'left', fontSize: 14 }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                 </p>
 
                                 <div className="d-flex justify-content-center">

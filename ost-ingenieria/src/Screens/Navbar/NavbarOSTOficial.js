@@ -1,4 +1,4 @@
-import React , {useState, useRef, useEffect} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Navbar, Nav, NavDropdown, Carousel, Image } from 'react-bootstrap';
 import '../Navbar/NavbarOSTOficial.css';
 import Bounce from 'react-reveal/Bounce';
@@ -26,9 +26,9 @@ const NavbarOSTOficial = () => {
     return (
         <React.Fragment>
 
-            <Navbar fixed="top" expand="lg" bg={navBackground ? 'dark' : 'transparent'} style={{ transition: '1s ease',  }}>
+            <Navbar fixed="top" expand="lg" bg={navBackground ? 'dark' : 'transparent'} style={{ transition: '1s ease', }}>
                 <div className="container">
-                    <Navbar.Brand href="#home"><Image src="/resources/Logo-OST-PNG.png" style={{ height:100, width:100}}/></Navbar.Brand>
+                    <Navbar.Brand href={'Home'}><Image src="/resources/Logo-OST-PNG.png" style={{ width: '10%' }} /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
@@ -52,9 +52,9 @@ const NavbarOSTOficial = () => {
                         alt="rascacielos"
                     />
                     <Carousel.Caption>
-                        <Bounce left><h3 style={{ color: ''  }} className="animated bounceInLeft">Instalaciones Electromecánica</h3></Bounce>
-                        
-                        <Bounce rigth><p><a href="#">Contacto</a></p></Bounce>
+                        <Bounce left><h3 style={{ color: '' }} className="animated bounceInLeft">Instalaciones Electromecánica</h3></Bounce>
+
+                        <Bounce rigth><p><a href={'Contactos'}>Contacto</a></p></Bounce>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -65,7 +65,7 @@ const NavbarOSTOficial = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3 style={{ color: 'black'  }} ></h3>
+                        <h3 style={{ color: 'black' }} ></h3>
                         <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
