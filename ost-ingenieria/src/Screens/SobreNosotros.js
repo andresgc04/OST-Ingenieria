@@ -123,7 +123,10 @@ const SobreNosotros = () => {
 
                             <div>
                                 <h3>Henderson Montero</h3>
-                                <p style={{ textAlign: 'left', fontSize: 14 }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                <p style={{ textAlign: 'justify', fontSize: 14 }}>
+                                    Agrimensor por la Universidad Autónoma de Santo Domingo, topógrafo con más de 4 años de experiencia en el desarrollo de levantamientos topográficos,
+                                    así como replanteo, alineamientos y preparación de expedientes técnicos para mensura y procesamiento de datos topográficos, cálculo de volúmenes y
+                                    diseño de planos topográficos.
                                 </p>
 
                                 <div className="d-flex justify-content-center">
@@ -147,7 +150,9 @@ const SobreNosotros = () => {
 
                             <div>
                                 <h3>Yancarlos Morales</h3>
-                                <p style={{ textAlign: 'left', fontSize: 14 }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                <p style={{ textAlign: 'justify', fontSize: 14 }}>
+                                    Ing. De Software por la Universidad Central del Este, contando con más de 2 años de experiencia en la gestión
+                                    y manejo de CCTV, controles de accesos y sistemas de alarmas.
                                </p>
 
                                 <div className="d-flex justify-content-center">

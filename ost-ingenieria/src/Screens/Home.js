@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Carousel, Image, Form } from 'react-bootstrap';
+import { Button, Image, Form } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import NavbarOSTOficial from './Navbar/NavbarOSTOficial';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,73 +8,23 @@ import FooterOST from './Footer/FooterOST';
 import '../styles/styles.css';
 import '../styles/card-style.css';
 import { Helmet } from 'react-helmet';
+import emailjs from 'emailjs-com';
 
 const TITLE = 'Inicio | OST Ingeniería'
 
-function ControlledCarousel() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
-  return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item style={{ height: 500 }}>
-        <img
-          className="d-block w-100"
-          src="/resources/instalaciones.jpg"
-          alt=""
-        />
-        <Carousel.Caption>
-          <h3 style={{ color: "white", fontSize: 36 }}>OST INGENIERÍA </h3>
-          <p> Oficina de Servicios Técnicos de Ingeniería </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item style={{ height: 500 }}>
-        <img
-          className="d-block w-100"
-          src="/resources/paneles.jpg"
-          alt=""
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item style={{ height: 500 }}>
-        <img
-          className="d-block w-100"
-          src="/resources/topografo.jpg"
-          alt=""
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item style={{ height: 500 }}>
-        <img
-          className="d-block w-100"
-          src="/resources/instalaciones.jpg"
-          alt=""
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-  );
-}
-
-
 const Home = (props) => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_zwncyjk', 'template_vfg56nc', e.target, 'user_6q85fkNk4vz9KFR6KmOuw')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
+  }
 
   return (
     <React.Fragment>
@@ -139,7 +89,7 @@ const Home = (props) => {
                         a las instalaciones industriales de media y baja tensión,
                         también incorporamos los diseños correspondientes a este apartado.
                       </p>
-                      <a href="#" className="btn btn-outline-success">Saber más</a>
+                      <a href={'InstalacionesElectromecanicas'} className="btn btn-outline-success">Saber más</a>
                     </div>
                   </div>
                 </div>
@@ -156,7 +106,7 @@ const Home = (props) => {
                         Seguimiento a planificación minera, inventario de materiales de acopio,
                         levantamiento topográfico de minas a cielo abierto y asistencia por Dron y GPS.
                       </p>
-                      <a href="#" className="btn btn-outline-success">Saber más</a>
+                      <a href={'Topografia'} className="btn btn-outline-success">Saber más</a>
                     </div>
                   </div>
                 </div>
@@ -174,7 +124,7 @@ const Home = (props) => {
                         tiempos de ejecución de los requerimientos de nuestros clientes.
                         Hacemos trabajos de impresión 3D.
                       </p>
-                      <a href="#" className="btn btn-outline-success">Saber más</a>
+                      <a href={'MecanizadoCNC'} className="btn btn-outline-success">Saber más</a>
                     </div>
                   </div>
                 </div>
@@ -277,23 +227,28 @@ const Home = (props) => {
                   <h1 className="display-4" style={{ color: 'Black' }}>Contátecnos</h1>
                 </div>
                 <div className="mt-5 mr-5">
-                  <Form>
+                  <Form onSubmit={sendEmail}>
+                    <Form.Group controlId="exampleForm.ControlInput1">
+                      <Form.Label>Nombre Completo:</Form.Label>
+                      <Form.Control type="text" placeholder="Nombre Completo" name="name" />
+                    </Form.Group>
+
                     <Form.Group controlId="exampleForm.ControlInput1">
                       <Form.Label>Correo electrónico:</Form.Label>
-                      <Form.Control type="email" placeholder="nombre@ejemplo.com" />
+                      <Form.Control type="email" placeholder="nombre@ejemplo.com" name="email" />
                     </Form.Group>
 
                     <Form.Group controlId="exampleForm.ControlInput1">
                       <Form.Label>Motivo:</Form.Label>
-                      <Form.Control type="text" />
+                      <Form.Control type="text" name="subject" />
                     </Form.Group>
 
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                       <Form.Label>Mensaje:</Form.Label>
-                      <Form.Control as="textarea" rows="3" />
+                      <Form.Control as="textarea" rows="3" name="message" />
                     </Form.Group>
 
-                    <Button variant="outline-success" type="submit">
+                    <Button variant="outline-success" type="submit" value="Send Message">
                       Enviar
                     </Button>
                   </Form>
@@ -336,7 +291,6 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-
       <FooterOST />
     </React.Fragment >
   );

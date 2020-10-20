@@ -6,10 +6,24 @@ import { faMapMarkerAlt, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-ic
 import NavbarOSTOficial from './Navbar/NavbarOSTOficial';
 import FooterOST from './Footer/FooterOST';
 import { Helmet } from 'react-helmet';
+import emailjs from 'emailjs-com';
 
 const TITLE = 'Contactos | OST Ingeniería'
 
 const Contactos = () => {
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_zwncyjk', 'template_vfg56nc', e.target, 'user_6q85fkNk4vz9KFR6KmOuw')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    }
+
     return (
         <React.Fragment>
 
@@ -31,25 +45,30 @@ const Contactos = () => {
                                     <h1 className="display-4" style={{ color: 'Black' }}>Contátecnos</h1>
                                 </div>
                                 <div className="mt-5 mr-5">
-                                    <Form>
+                                    <Form onSubmit={sendEmail}>
+                                        <Form.Group controlId="exampleForm.ControlInput1">
+                                            <Form.Label>Nombre Completo:</Form.Label>
+                                            <Form.Control type="text" placeholder="Nombre Completo" name="name" />
+                                        </Form.Group>
+
                                         <Form.Group controlId="exampleForm.ControlInput1">
                                             <Form.Label>Correo electrónico:</Form.Label>
-                                            <Form.Control type="email" placeholder="nombre@ejemplo.com" />
+                                            <Form.Control type="email" placeholder="nombre@ejemplo.com" name="email" />
                                         </Form.Group>
 
                                         <Form.Group controlId="exampleForm.ControlInput1">
                                             <Form.Label>Motivo:</Form.Label>
-                                            <Form.Control type="text" />
+                                            <Form.Control type="text" name="subject" />
                                         </Form.Group>
 
                                         <Form.Group controlId="exampleForm.ControlTextarea1">
                                             <Form.Label>Mensaje:</Form.Label>
-                                            <Form.Control as="textarea" rows="3" />
+                                            <Form.Control as="textarea" rows="3" name="message" />
                                         </Form.Group>
 
-                                        <Button variant="primary" type="submit">
+                                        <Button variant="primary" type="submit" value="Send Message">
                                             Enviar
-                    </Button>
+                                        </Button>
                                     </Form>
                                 </div>
                             </Fade>
