@@ -105,7 +105,7 @@ const Contactos = () => {
             <section>
                 <div>
                     <div>
-                        <iframe title="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.903078811839!2d-69.86497298510123!3d18.48804887499329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf887709f1ec71%3A0x3479b79fe2758086!2sAv.%20Pdte.%20V%C3%A1squez%20144%2C%20Santo%20Domingo%20Este%2011503!5e0!3m2!1ses-419!2sdo!4v1600837788925!5m2!1ses-419!2sdo" width="100%" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d530.3348873463234!2d-69.86292387965976!3d18.488222196376707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89291a515111%3A0x18c16aba38a7a1c4!2sOST%20Ingenieria!5e0!3m2!1ses-419!2sdo!4v1603240635592!5m2!1ses-419!2sdo" width="100%" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </section>

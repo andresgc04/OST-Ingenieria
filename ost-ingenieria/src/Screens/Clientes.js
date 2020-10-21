@@ -125,47 +125,18 @@ const Clientes = () => {
                         <Fade left>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2">
-                                    <Image src="/resources/JCE.png" alt="JCE" />
+                                    <Image src="/resources/AMYC.png" alt="AMYC" style={{ width: '60%' }} />
                                 </div>
                             </div>
                         </Fade>
 
                         <Fade right>
-                            <div className="col-md-6 my-auto">
-                                <p className="" style={{ fontSize: 22, textAlign: 'justify' }}>
-                                    La Junta Central Electoral de la República Dominicana es un organismo especial del
-                                    gobierno de la República Dominicana encargado de velar por un democrático e imparcial
-                                    proceso electoral, además administrar el registro civil, el estado civil de todos
-                                    los ciudadanos dominicanos.
-                                </p>
-                            </div>
-                        </Fade>
-
-                    </div>
-                </div>
-            </section>
-
-            <section className="mt-5">
-                <div className="container">
-                    <div className="row">
-
-
-                        <Fade left>
                             <div className="col-md-6 my-auto">
                                 <p className="" style={{ fontSize: 22, textAlign: 'justify' }}>
                                     Empresa de capital nacional dedicada al financiamiento inmobiliario y vehículos de motor.
                             </p>
                             </div>
                         </Fade>
-
-                        <Fade right>
-                            <div className="col-md-6 my-auto">
-                                <div className="d-flex justify-content-center ml-2">
-                                    <Image src="/resources/AMYC.png" alt="AMYC" style={{ width: '60%' }} />
-                                </div>
-                            </div>
-                        </Fade>
-
                     </div>
                 </div>
             </section>
@@ -176,18 +147,18 @@ const Clientes = () => {
 
                         <Fade left>
                             <div className="col-md-6 my-auto">
-                                <div className="d-flex justify-content-center ml-2">
-                                    <Image src="/resources/metalmecanica.png" alt="metalmecanica" style={{ width: '60%' }} />
-                                </div>
+                                <p className="" style={{ fontSize: 22, textAlign: 'justify' }}>
+                                    Taller industrial que cuanta con importantes maquinarias para la confección
+                                    y fabricación de ductería, tubería y procesos de soldadura.
+                                </p>
                             </div>
                         </Fade>
 
                         <Fade right>
                             <div className="col-md-6 my-auto">
-                                <p className="" style={{ fontSize: 22, textAlign: 'justify' }}>
-                                    Taller industrial que cuanta con importantes maquinarias para la confección
-                                    y fabricación de ductería, tubería y procesos de soldadura.
-                                </p>
+                                <div className="d-flex justify-content-center ml-2">
+                                    <Image src="/resources/metalmecanica.png" alt="metalmecanica" style={{ width: '60%' }} />
+                                </div>
                             </div>
                         </Fade>
 
