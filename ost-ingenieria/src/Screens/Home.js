@@ -67,7 +67,7 @@ const Home = (props) => {
       </section>
 
       <section style={{ background: '#3D3F47' }}>
-        <div className="container p-5">
+        <div className="container p-3">
           <Fade left>
             <div className="d-flex justify-content-center" style={{ marginBottom: -40 }}>
               <h1 className="display-4 mt-3" style={{ color: 'white' }}>Nuestros Servicios</h1>
@@ -77,7 +77,7 @@ const Home = (props) => {
             <div className="container-fluid d-flex justify-content-center">
               <div className="row">
 
-                <div className="col-md-4">
+                <div className="col-md-6 mb-4">
                   <div className="card text-center shadow">
                     <div className="overflow">
                       <img style={{ blockSize: 220 }} src="/resources/bombas1.jpg" alt="InstalacionesElectromecanicas" className="card-img-top" />
@@ -94,7 +94,7 @@ const Home = (props) => {
                   </div>
                 </div>
 
-                <div className="col-md-2">
+                <div className="col-md-6">
                   <div className="card text-center shadow">
                     <div className="overflow">
                       <img style={{ blockSize: 220 }} src="/resources/Topografia1.jpg" alt="Topografia" className="card-img-top" />
@@ -110,8 +110,6 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-
-
 
               </div>
             </div>

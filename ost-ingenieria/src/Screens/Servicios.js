@@ -28,7 +28,7 @@ const Servicios = () => {
 
                     <div className="row mt-4">
 
-                        <div className="col-md-4">
+                        <div className="col-md-6">
                             <div className="text-center">
                                 <a href={'InstalacionesElectromecanicas'} className="text-reset"><h1 className="display-4 mb-4 " style={{ fontSize: 24, color: 'red' }}>Instalaciones Electromecánicas</h1></a>
                                 <a href={'InstalacionesElectricasServices'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Instalaciones Eléctricas</p></a>
@@ -37,7 +37,7 @@ const Servicios = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-6 ml-4">
+                        <div className="col-md-6">
                             <div className="text-center">
                                 <a href={'Topografia'} className="text-reset"><h1 className="display-4 mb-4" style={{ fontSize: 24, color: 'red' }}>Topografía</h1></a>
                                 <a href={'Geolocalizacion'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Geolocalización</p></a>
