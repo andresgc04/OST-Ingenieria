@@ -26,30 +26,25 @@ const Servicios = () => {
                         <h1 className="display-4" style={{ fontSize: 40 }}>Servicios que ofrecemos</h1>
                     </div>
 
-                    <div className="row mt-5">
+                    <div className="row mt-4">
 
                         <div className="col-md-4">
                             <div className="text-center">
-                                <a href={'InstalacionesElectromecanicas'} className="text-reset"><h1 className="display-4 mb-4" style={{ fontSize: 24, color: 'red' }}>Instalaciones Electromecanicas</h1></a>
-                                <a href={'InstalacionesElectricasServices'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Instalaciones Electricas</p></a>
-                                <a href={'InstalacionesMecanicas'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Instalaciones Mecanicas</p></a>
+                                <a href={'InstalacionesElectromecanicas'} className="text-reset"><h1 className="display-4 mb-4 " style={{ fontSize: 24, color: 'red' }}>Instalaciones Electromecánicas</h1></a>
+                                <a href={'InstalacionesElectricasServices'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Instalaciones Eléctricas</p></a>
+                                <a href={'InstalacionesMecanicas'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Instalaciones Mecánicas</p></a>
                                 <a href={'SistemasDeDeteccionDeIncendios'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Sistemas de detección de incendios</p></a>
                             </div>
                         </div>
 
-                        <div className="col-md-4">
+                        <div className="col-md-6 ml-4">
                             <div className="text-center">
                                 <a href={'Topografia'} className="text-reset"><h1 className="display-4 mb-4" style={{ fontSize: 24, color: 'red' }}>Topografía</h1></a>
                                 <a href={'Geolocalizacion'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Geolocalización</p></a>
                             </div>
                         </div>
 
-                        <div className="col-md-4">
-                            <div className="text-center">
-                                <a href={'MecanizadoCNC'} className="text-reset"><h1 className="display-4 mb-4" style={{ fontSize: 24, color: 'red' }}>Mecanizado CNC</h1></a>
-                                <a href={'Impresiones3D'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Impresiones 3D</p></a>
-                            </div>
-                        </div>
+
 
                     </div>
 

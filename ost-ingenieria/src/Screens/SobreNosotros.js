@@ -67,7 +67,7 @@ const SobreNosotros = () => {
 
                             <div >
                                 <h3>Angela Cepeda, CFO</h3>
-                                <p style={{ textAlign: 'justify', fontSize: 14 }}>Lic. Contabilidad por la Universidad Tecnologica UTESA. <br />
+                                <p style={{ textAlign: 'justify', fontSize: 14 }}>Lic. Contabilidad por la Universidad Tecnologica UTESA. 
                                 Experta en asuntos financieros, presupuestos y asesora tributaria. Fundadora de AM&C Soluciones, empresa dedicada al financiamiento de automóviles e inmuebles.
                                     </p>
 
@@ -151,8 +151,8 @@ const SobreNosotros = () => {
                             <div>
                                 <h3>Yancarlos Morales</h3>
                                 <p style={{ textAlign: 'justify', fontSize: 14 }}>
-                                    Ing. De Software por la Universidad Central del Este, contando con más de 2 años de experiencia en la gestión
-                                    y manejo de CCTV, controles de accesos y sistemas de alarmas.
+                                    Ingeniero de Software por la Universidad Central del Este, contando con más de 2 años de experiencia en la gestión
+                                    y manejo de CCTV a nivel industrial, controles de accesos y sistemas de alarmas.
                                </p>
 
                                 <div className="d-flex justify-content-center">

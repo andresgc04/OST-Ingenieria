@@ -72,12 +72,12 @@ const NavbarOSTOficial = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/resources/3d.jpg"
+                        src="/resources/topografia1.jpg"
                         alt="Third slide"
                     />
 
                     <Carousel.Caption>
-                        <h3> Impresiones 3D totalmente garantizadas</h3>
+                        <h3 style={{ color: 'black' }} > Servicios Topográficos y Geolocalización</h3>
                         <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>

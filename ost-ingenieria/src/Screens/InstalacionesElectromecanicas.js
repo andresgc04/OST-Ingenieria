@@ -27,13 +27,13 @@ const InstalacionesElectromecanicas = () => {
                             <Col sm={4}>
                                 <ListGroup>
                                     <ListGroup.Item action href={'InstalacionesElectromecanicas'}>
-                                        Instalaciones Electromecanicas
+                                        Instalaciones Electromecánicas
                                     </ListGroup.Item>
                                     <ListGroup.Item action href={'InstalacionesElectricasServices'}>
-                                        Instalaciones Electricas
+                                        Instalaciones Eléctricas
                                     </ListGroup.Item>
                                     <ListGroup.Item action href={'InstalacionesMecanicas'}>
-                                        Instalaciones Mecanicas
+                                        Instalaciones Mecánicas
                                     </ListGroup.Item>
                                     <ListGroup.Item action href={'SistemasDeDeteccionDeIncendios'}>
                                         Sistemas de Detección de Incendios
@@ -43,7 +43,7 @@ const InstalacionesElectromecanicas = () => {
                             <Col sm={8}>
                                 <Tab.Content>
                                     <Tab.Pane eventKey={'InstalacionesElectromecanicas'}>
-                                        <h1 className="display-4 text-center" style={{ fontSize: 40 }}>Instalaciones Electromecanicas</h1>
+                                        <h1 className="display-4 text-center" style={{ fontSize: 40 }}>Instalaciones Electromecánicas</h1>
                                         <p className="mt-4" style={{ textAlign: 'justify', fontFamily: 'sans-serif' }}>
                                             La Ingeniería electromecánica es la aplicación híbrida que surge de la combinación sinérgica de distintas áreas del conocimiento,
                                             como el electromagnetismo, la electrónica, la electricidad y la mecánica. Se aplica principalmente en mecanismos eléctricos,

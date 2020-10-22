@@ -94,7 +94,7 @@ const Home = (props) => {
                   </div>
                 </div>
 
-                <div className="col-md-4">
+                <div className="col-md-2">
                   <div className="card text-center shadow">
                     <div className="overflow">
                       <img style={{ blockSize: 220 }} src="/resources/Topografia1.jpg" alt="Topografia" className="card-img-top" />
@@ -111,23 +111,7 @@ const Home = (props) => {
                   </div>
                 </div>
 
-                <div className="col-md-4">
-                  <div className="card text-center shadow">
-                    <div className="overflow">
-                      <img style={{ blockSize: 220 }} src="/resources/CNC.jpg" alt="MecanizadoCNC" className="card-img-top" />
-                    </div>
-                    <div className="card-body text-dark">
-                      <h4 className="card-title">Mecanizado CNC</h4>
-                      <p className="card-text text-secondary">
-                        Contamos con talleres especializados en mecanizado con control
-                        numérico con modernas maquinas que ofrecen precisión y excelentes
-                        tiempos de ejecución de los requerimientos de nuestros clientes.
-                        Hacemos trabajos de impresión 3D.
-                      </p>
-                      <a href={'MecanizadoCNC'} className="btn btn-outline-success">Saber más</a>
-                    </div>
-                  </div>
-                </div>
+
 
               </div>
             </div>

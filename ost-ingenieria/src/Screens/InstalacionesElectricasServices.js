@@ -26,13 +26,13 @@ const InstalacionesElectricasServices = () => {
                             <Col sm={4}>
                                 <ListGroup>
                                     <ListGroup.Item action href={'InstalacionesElectromecanicas'}>
-                                        Instalaciones Electromecanicas
+                                        Instalaciones Electromecánicas
                                     </ListGroup.Item>
                                     <ListGroup.Item action href={'InstalacionesElectricasServices'}>
-                                        Instalaciones Electricas
+                                        Instalaciones Eléctricas
                                     </ListGroup.Item>
                                     <ListGroup.Item action href={'InstalacionesMecanicas'} >
-                                        Instalaciones Mecanicas
+                                        Instalaciones Mecánicas
                                     </ListGroup.Item>
                                     <ListGroup.Item action href={'SistemasDeDeteccionDeIncendios'}>
                                         Sistemas de Detección de Incendios
@@ -42,7 +42,7 @@ const InstalacionesElectricasServices = () => {
                             <Col sm={8}>
                                 <Tab.Content>
                                     <Tab.Pane eventKey={'InstalacionesElectricasServices'}>
-                                        <h1 className="display-4 text-center" style={{ fontSize: 40 }}>Instalaciones Electricas</h1>
+                                        <h1 className="display-4 text-center" style={{ fontSize: 40 }}>Instalaciones Eléctricas</h1>
                                         <p className="mt-4" style={{ textAlign: 'justify', fontFamily: 'sans-serif' }}>
                                             El servicio de instalaciones eléctricas que ofrecemos no solo se limita a las instalaciones industriales de media y baja tensión,
                                             en este apartado también incluimos, los diseños de estas, hacemos instalaciones de sistemas de detección de incendios, sistemas CCTV,
@@ -52,16 +52,17 @@ const InstalacionesElectricasServices = () => {
                                         <Container className="mt-3">
                                             <Row>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/InstalacionesElectricas2.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/paneles.jpg" rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/InstalacionesElectricas.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/panel-electrico.jpg" rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/InstalacionesElectricas3.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/camaras.jpg" rounded />
                                                 </Col>
+
                                             </Row>
                                         </Container>
                                     </Tab.Pane>

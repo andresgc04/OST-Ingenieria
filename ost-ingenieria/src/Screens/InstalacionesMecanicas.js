@@ -26,13 +26,13 @@ const InstalacionesMecanicas = () => {
                             <Col sm={4}>
                                 <ListGroup>
                                     <ListGroup.Item action href={'InstalacionesElectromecanicas'}>
-                                        Instalaciones Electromecanicas
+                                        Instalaciones Electromecánicas
                                     </ListGroup.Item>
                                     <ListGroup.Item action href={'InstalacionesElectricasServices'}>
-                                        Instalaciones Electricas
+                                        Instalaciones Eléctricas
                                     </ListGroup.Item>
                                     <ListGroup.Item action href={'InstalacionesMecanicas'}>
-                                        Instalaciones Mecanicas
+                                        Instalaciones Mecánicas
                                     </ListGroup.Item>
                                     <ListGroup.Item action href={'SistemasDeDeteccionDeIncendios'}>
                                         Sistemas de Detección de Incendios
@@ -42,7 +42,7 @@ const InstalacionesMecanicas = () => {
                             <Col sm={8}>
                                 <Tab.Content>
                                     <Tab.Pane eventKey={'InstalacionesMecanicas'}>
-                                        <h1 className="display-4 text-center mt-5" style={{ fontSize: 40 }}>Instalaciones Mecanicas</h1>
+                                        <h1 className="display-4 text-center mt-5" style={{ fontSize: 40 }}>Instalaciones Mecánicas</h1>
                                         <p className="mt-4" style={{ textAlign: 'justify', fontFamily: 'sans-serif' }}>
                                             Contamos con personal altamente calificado para trabajos de metalmecánica, sistemas de tuberías,
                                             instalaciones de ductos, maquinas rotativas y sistemas estáticos como filtros, chimeneas, ciclones,
@@ -60,7 +60,7 @@ const InstalacionesMecanicas = () => {
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/InstalacionesMecanicas3.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/mecanica.jpg" rounded />
                                                 </Col>
                                             </Row>
                                         </Container>

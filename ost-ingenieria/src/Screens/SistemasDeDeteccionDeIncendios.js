@@ -55,10 +55,10 @@ const SistemasDeDeteccionDeIncendios = () => {
                                                     <Image style={{ width: '100%', height: '60%' }} src="/resources/alarma-incendios.jpg" rounded />
                                                 </Col>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '60%' }} src="/resources/SistemaDeDeteccionDeIncendios.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '60%' }} src="/resources/alarma.jpg" rounded />
                                                 </Col>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '60%' }} src="/resources/SistemaDeIncendios.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '60%' }} src="/resources/manilla-alarma.jpg" rounded />
                                                 </Col>
                                             </Row>
                                         </Container>
