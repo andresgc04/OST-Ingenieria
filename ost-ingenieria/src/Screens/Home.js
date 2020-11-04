@@ -207,8 +207,8 @@ const Home = (props) => {
                 <div className="mt-5 mr-5">
                   <Form onSubmit={sendEmail}>
                     <Form.Group controlId="exampleForm.ControlInput1">
-                      <Form.Label>Nombre Completo:</Form.Label>
-                      <Form.Control type="text" placeholder="Nombre Completo" name="name" />
+                      <Form.Label>Nombre completo:</Form.Label>
+                      <Form.Control type="text" placeholder="nombre completo" name="name" />
                     </Form.Group>
 
                     <Form.Group controlId="exampleForm.ControlInput1">

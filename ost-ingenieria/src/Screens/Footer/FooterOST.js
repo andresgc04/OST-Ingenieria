@@ -26,7 +26,7 @@ const FooterOST = () => {
                         <ul className="col-md-3 list-unstyled">
                             <li className="font-weight-bold text-uppercase">Localización</li>
                             <li>
-                                <p>Av. Pdte. Vasquez 17,<br />
+                                <p>Av. Pdte. Vásquez 17,<br />
                                    Esq. Juan Isidro Jiménez, <br />
                                    Alma Rosa, Santo Domingo Este.
                                 </p>
