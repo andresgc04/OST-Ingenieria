@@ -1,109 +1,56 @@
-import React from "react";
-import { SocialIcon } from "react-social-icons";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 
 const FooterOST = () => {
-  return (
-    <footer className="bg-dark text-white py-1">
-      <section>
-        <div className="container mt-5">
-          <nav className="row">
-            <Link className="col-md-3 text-reset text-uppercase d-flex align-items-center" to="/Home">
-              <img
-                src="/resources/Logo-OST-PNG.png"
-                alt="Logo OST Ingenieria"
-                className="img-logo"
-                style={{ width: "60%" }}
-              />
-            </Link>
-            <ul className="col-md-3 list-unstyled">
-              <li className="font-weight-bold text-uppercase">Menú</li>
-              <li>
-                <Link
-                  className="text-reset"
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/Home"
-                >
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-reset"
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/SobreNosotros"
-                >
-                  Nosotros
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-reset"
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/Clientes"
-                >
-                  Clientes
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-reset"
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/Servicios"
-                >
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-reset"
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/Contactos"
-                >
-                  Contactos
-                </Link>
-              </li>
-            </ul>
+    return (
 
-            <ul className="col-md-3 list-unstyled">
-              <li className="font-weight-bold text-uppercase">Localización</li>
-              <li>
-                <p>
-                  Av. Pdte. Vásquez 17,
-                  <br />
-                  Esq. Juan Isidro Jiménez, <br />
-                  Alma Rosa, Santo Domingo Este.
-                </p>
-              </li>
-            </ul>
+        <footer className="bg-dark text-white py-1">
+            <section>
+                <div className="container mt-5">
 
-            <ul className="col-md-3 list-unstyled">
-              <li className="font-weight-bold text-uppercase">
-                Redes Sociales
-              </li>
-              <li className="d-flex justify-content mt-2">
-                <a className="text-reset">
-                  <SocialIcon
-                    url="https://www.facebook.com/OST-Ingenieria-970096546484811"
-                    style={{ size: 20 }}
-                  />
-                </a>
-                <a style={{ marginLeft: 25 }} className="text-reset">
-                  <SocialIcon url="https://www.instagram.com/ostingenieria/" />
-                </a>
-              </li>
-            </ul>
+                    <nav className="row">
+                        <a href={'Home'} className="col-md-3 text-reset text-uppercase d-flex align-items-center">
+                            <img src="/resources/Logo-OST-PNG.png" alt="Logo OST Ingenieria" className="img-logo" style={{ width: '60%' }} />
+                        </a>
+                        <ul className="col-md-3 list-unstyled">
+                            <li className="font-weight-bold text-uppercase">Menú</li>
+                            <li><a href={"Home"} className="text-reset">Inicio</a></li>
+                            <li><a href={"#sobreNosotros"} className="text-reset">Nosotros</a></li>
+                            <li><a href={"SobreNosotros"} className="text-reset">Equipo</a></li>
+                            <li><a href={"Clientes"} className="text-reset">Clientes</a></li>
+                            <li><a href={"Servicios"} className="text-reset">Servicios</a></li>
+                            <li><a href={"Contactos"} className="text-reset">Contactos</a></li>
 
-            <div className="footer-bottom mt-1">
-              <p className="text-xs-center mr-2">
-                &copy;{new Date().getFullYear()} Copyright | OST Ingeniería SRL.
-              </p>
-            </div>
-          </nav>
-        </div>
-      </section>
-    </footer>
-  );
-};
+                        </ul>
+
+                        <ul className="col-md-3 list-unstyled">
+                            <li className="font-weight-bold text-uppercase">Localización</li>
+                            <li>
+                                <p>Av. Pdte. Vásquez 17,<br />
+                                   Esq. Juan Isidro Jiménez, <br />
+                                   Alma Rosa, Santo Domingo Este.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <ul className="col-md-3 list-unstyled">
+                            <li className="font-weight-bold text-uppercase">Redes Sociales</li>
+                            <li className="d-flex justify-content mt-2">
+                                <a className="text-reset"><SocialIcon url="https://www.facebook.com/OST-Ingenieria-970096546484811" style={{ size: 20 }} /></a>
+                                <a style={{ marginLeft: 25 }} className="text-reset"><SocialIcon url="https://www.instagram.com/ostingenieria/" /></a>
+                            </li>
+                        </ul>
+
+                        <div className="footer-bottom mt-1">
+                            <p className="text-xs-center mr-2">&copy;{new Date().getFullYear()} Copyright | OST Ingeniería SRL.
+                        </p>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </footer>
+
+    );
+}
 
 export default FooterOST;
