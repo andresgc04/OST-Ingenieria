@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Jumbotron, Image } from 'react-bootstrap';
+import {Image } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import NavbarOSTOficial from './Navbar/NavbarOSTOficial';
 import FooterOST from './Footer/FooterOST';

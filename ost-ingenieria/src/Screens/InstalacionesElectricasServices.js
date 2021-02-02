@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Button, Carousel, Image, Form, ListGroup, Tab, Row, Col, Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
+import React from 'react';
+import { Image, ListGroup, Tab, Row, Col, Container } from 'react-bootstrap';
+//import Fade from 'react-reveal/Fade';
 import NavbarOSTOficial from './Navbar/NavbarOSTOficial';
 import FooterOST from './Footer/FooterOST';
 import { Helmet } from 'react-helmet';
