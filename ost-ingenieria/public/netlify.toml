@@ -4,23 +4,3 @@ publish = "build-output/"
 command = "echo 'default context'"
 functions = "functions/"
 
-[context.production]
-  publish = "output/"
-  command = "make publish"
-  environment = { ACCESS_TOKEN = "super secret", NODE_VERSION = "14.15.3" }
-
-[context.deploy-preview]
-  publish = "dist/"
-
-[context.deploy-preview.environment]
-  ACCESS_TOKEN = "not so secret"
-
-[context.branch-deploy]
-  command = "echo branch"
-[context.branch-deploy.environment]
-  NODE_ENV = "development"
-  
-[[redirects]]
-from="/*"
-to="/index.html"
-status=200
