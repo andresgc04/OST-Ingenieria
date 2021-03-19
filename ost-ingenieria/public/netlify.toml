@@ -1,0 +1,6 @@
+[build]
+base = "ost-ingenieria/"
+publish = "build-output/"
+command = "echo 'default context'"
+functions = "functions/"
+

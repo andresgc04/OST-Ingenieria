@@ -15,7 +15,6 @@ const FooterOST = () => {
                         <ul className="col-md-3 list-unstyled">
                             <li className="font-weight-bold text-uppercase">Menú</li>
                             <li><a href={"Home"} className="text-reset">Inicio</a></li>
-                            <li><a href={"#sobreNosotros"} className="text-reset">Nosotros</a></li>
                             <li><a href={"SobreNosotros"} className="text-reset">Equipo</a></li>
                             <li><a href={"Clientes"} className="text-reset">Clientes</a></li>
                             <li><a href={"Servicios"} className="text-reset">Servicios</a></li>
@@ -36,7 +35,7 @@ const FooterOST = () => {
                         <ul className="col-md-3 list-unstyled">
                             <li className="font-weight-bold text-uppercase">Redes Sociales</li>
                             <li className="d-flex justify-content mt-2">
-                                <a className="text-reset"><SocialIcon url="https://www.facebook.com/OST-Ingenieria-970096546484811" style={{ size: 20 }} /></a>
+                                <a  className="text-reset"><SocialIcon url="https://www.facebook.com/OST-Ingenieria-970096546484811" style={{ size: 20 }} /></a>
                                 <a style={{ marginLeft: 25 }} className="text-reset"><SocialIcon url="https://www.instagram.com/ostingenieria/" /></a>
                             </li>
                         </ul>
