@@ -25,7 +25,7 @@ const SobreNosotros = () => {
                 <div className="container mt-5">
 
                     <div style={{ marginBottom: 50, marginLeft: 40 }} className="text-center">
-                        <h1 className="display-4 text-center" style={{ fontSize: 50 }}>Nuestro Equipo:</h1>
+                        <h1 className="display-4 text-center" style={{ fontSize: 50 }}>Nuestro Equipo</h1>
                     </div>
 
                     <div className="d-flex justify-content-center">
@@ -100,11 +100,11 @@ const SobreNosotros = () => {
                                 <div className="d-flex justify-content-center">
                                     <div className="d-flex justify-content">
                                         <FontAwesomeIcon icon={faPhoneSquareAlt} style={{ color: '#f57c00', fontSize: 35 }} />
-                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }}>(829) 566-4182</p>
+                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }}>(809) 702-6429</p>
                                     </div>
                                     <div className="d-flex justify-content">
                                         <FontAwesomeIcon icon={faEnvelope} style={{ marginLeft: 10, color: '#f57c00', fontSize: 35 }} />
-                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }} > grissel21@hotmail.com </p>
+                                        <p style={{ marginLeft: 5, marginTop: 5, fontSize: 14 }} > ostingenieria@gmail.com </p>
                                     </div>
                                 </div>
 
@@ -118,7 +118,7 @@ const SobreNosotros = () => {
 
                         <div className="col-md-6 mr-4 justify-content-between h-100 col-sm-8 align-self-center text-center col-lg-5">
                             <div>
-                                <Image style={{ height: 118, width: 119 }} src="/resources/Henderson.png" roundedCircle />
+                                <Image style={{ height: 118, width: 119 }} src="/resources/Henderson1.jpg" roundedCircle />
                             </div>
 
                             <div>
@@ -145,14 +145,14 @@ const SobreNosotros = () => {
 
                         <div className="col-md-6 ml-5 justify-content-between h-100 col-sm-8 align-self-center text-center col-lg-6">
                             <div>
-                                <Image style={{ height: 118, width: 119 }} src="/resources/yancos.jpeg" roundedCircle />
+                                <Image style={{ height: 118, width: 119 }} src="/resources/yancarlitos.jpg" roundedCircle />
                             </div>
 
                             <div>
                                 <h3>Yancarlos Morales</h3>
                                 <p style={{ textAlign: 'justify', fontSize: 14 }}>
-                                    Ingeniero de Software por la Universidad Central del Este, contando con más de 2 años de experiencia en la gestión
-                                    y manejo de CCTV a nivel industrial, controles de accesos y sistemas de alarmas.
+                                    Ingeniero de Software por la Universidad Central del Este, contando con amplios conocimientos teóricos y prácticos, a su vez años de experiencia en la gestión
+                                    y manejo de CCTV a grandes escalas, controles de accesos y sistemas de alarmas.
                                </p>
 
                                 <div className="d-flex justify-content-center">
