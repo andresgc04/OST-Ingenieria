@@ -26,7 +26,7 @@ const Clientes = () => {
                         <Fade left>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2 mb-2">
-                                    <Image src="/resources/MicrotekMedical.png" alt="MicrotekMedical" />
+                                    <Image src={process.env.PUBLIC_URL+"/resources/MicrotekMedical.png"} alt="MicrotekMedical" />
                                 </div>
                             </div>
                         </Fade>
@@ -58,7 +58,7 @@ const Clientes = () => {
                         <Fade right>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2 mb-2">
-                                    <Image src="/resources/Inprotect.png" alt="Inprotect" style={{ width: '60%' }} />
+                                    <Image src={process.env.PUBLIC_URL+"/resources/Inprotect.png"} alt="Inprotect" style={{ width: '60%' }} />
                                 </div>
                             </div>
                         </Fade>
@@ -74,7 +74,7 @@ const Clientes = () => {
                         <Fade left>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2 mb-2">
-                                    <Image src="/resources/SigmaPlast.png" alt="SigmaPlast" />
+                                    <Image src={process.env.PUBLIC_URL+"/resources/SigmaPlast.png"} alt="SigmaPlast" />
                                 </div>
                             </div>
                         </Fade>
@@ -109,7 +109,7 @@ const Clientes = () => {
                         <Fade right>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2 mb-5">
-                                    <Image src="/resources/ParqueIndustrialDuarte.png" alt="ParqueIndustrialDuarte" style={{ width: '60%' }} />
+                                    <Image src={process.env.PUBLIC_URL+"/resources/ParqueIndustrialDuarte.png"} alt="ParqueIndustrialDuarte" style={{ width: '60%' }} />
                                 </div>
                             </div>
                         </Fade>
@@ -125,7 +125,7 @@ const Clientes = () => {
                         <Fade left>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2">
-                                    <Image src="/resources/AMYC.png" alt="AMYC" style={{ width: '60%' }} />
+                                    <Image src={process.env.PUBLIC_URL+"/resources/AMYC.png"} alt="AMYC" style={{ width: '60%' }} />
                                 </div>
                             </div>
                         </Fade>
@@ -157,7 +157,7 @@ const Clientes = () => {
                         <Fade right>
                             <div className="col-md-6 my-auto">
                                 <div className="d-flex justify-content-center ml-2">
-                                    <Image src="/resources/metalmecanica.png" alt="metalmecanica" style={{ width: '60%' }} />
+                                    <Image src={process.env.PUBLIC_URL+"/resources/metalmecanica.png"} alt="metalmecanica" style={{ width: '60%' }} />
                                 </div>
                             </div>
                         </Fade>

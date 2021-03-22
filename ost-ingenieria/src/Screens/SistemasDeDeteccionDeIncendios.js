@@ -52,13 +52,13 @@ const SistemasDeDeteccionDeIncendios = () => {
                                         <Container className="mt-3">
                                             <Row>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '60%' }} src="/resources/alarma-incendios.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '60%' }} src={process.env.PUBLIC_URL+"/resources/alarma-incendios.jpg"} rounded />
                                                 </Col>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '60%' }} src="/resources/alarma.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '60%' }} src={process.env.PUBLIC_URL+"/resources/alarma.jpg"} rounded />
                                                 </Col>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '60%' }} src="/resources/manilla-alarma.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '60%' }} src={process.env.PUBLIC_URL+"/resources/manilla-alarma.jpg"} rounded />
                                                 </Col>
                                             </Row>
                                         </Container>

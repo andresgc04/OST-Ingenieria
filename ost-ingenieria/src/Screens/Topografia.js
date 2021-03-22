@@ -45,15 +45,15 @@ const Topografia = () => {
                                         <Container className="mt-3">
                                             <Row>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/Topografia5.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/Topografia5.jpg"} rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/topografia1.png" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/topografia1.png"} rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/Topografia4.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/Topografia4.jpg"} rounded />
                                                 </Col>
                                             </Row>
                                         </Container>

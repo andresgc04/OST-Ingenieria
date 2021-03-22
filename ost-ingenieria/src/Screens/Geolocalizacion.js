@@ -45,15 +45,15 @@ const Geolocalizacion = () => {
                                         <Container className="mt-3">
                                             <Row>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/Geolocalizacion.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/Geolocalizacion.jpg"} rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/Geolocalizacion2.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/Geolocalizacion2.jpg"} rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/Geolocalizacion4.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/Geolocalizacion4.jpg"} rounded />
                                                 </Col>
                                             </Row>
                                         </Container>

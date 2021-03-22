@@ -9,6 +9,7 @@ import '../styles/styles.css';
 import '../styles/card-style.css';
 import { Helmet } from 'react-helmet';
 import emailjs from 'emailjs-com';
+import {Link} from 'react-router-dom';
 
 const TITLE = 'Inicio | OST Ingeniería'
 
@@ -89,7 +90,7 @@ const Home = (props) => {
                         a las instalaciones industriales de media y baja tensión,
                         también incorporamos los diseños correspondientes a este apartado.
                       </p>
-                      <a href={'InstalacionesElectromecanicas'} className="btn btn-outline-success">Saber más</a>
+                      <Link to="/InstalacionesElectromecanicas" className="btn btn-outline-success">Saber Más</Link>
                     </div>
                   </div>
                 </div>
@@ -106,7 +107,7 @@ const Home = (props) => {
                         Seguimiento a planificación minera, inventario de materiales de acopio,
                         levantamiento topográfico de minas a cielo abierto y asistencia por Dron y GPS.
                       </p>
-                      <a href={'Topografia'} className="btn btn-outline-success">Saber más</a>
+                      <Link to="/Topografia" className="btn btn-outline-success">Saber más</Link>
                     </div>
                   </div>
                 </div>
@@ -147,8 +148,7 @@ const Home = (props) => {
                     productores de materiales que están completamente identificado con nuestras políticas de seguridad,
                     calidad y protección al medioambiente.
                   </p>
-                  <a href={'SobreNosotros'} className="btn btn-outline-success">Más sobre nosotros</a>
-
+                  <Link to="/SobreNosotros" className="btn btn-outline-success">Más sobre nosotros</Link>
                 </div>
               </div>
             </Fade>

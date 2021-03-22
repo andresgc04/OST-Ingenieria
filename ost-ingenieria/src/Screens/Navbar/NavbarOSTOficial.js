@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Navbar, Nav, NavDropdown, Carousel, Image } from 'react-bootstrap';
 import '../Navbar/NavbarOSTOficial.css';
 import Bounce from 'react-reveal/Bounce';
+import { Link } from "react-router-dom";
+import { LineStyle } from '@material-ui/icons';
 
 
 const NavbarOSTOficial = () => {
@@ -27,17 +29,17 @@ const NavbarOSTOficial = () => {
 
             <Navbar fixed="top" expand="lg" bg={navBackground ? 'dark' : 'transparent'} style={{ transition: '1s ease', }}>
                 <div className="container">
-                    <Navbar.Brand href={'Home'}><Image src={process.env.PUBLIC_URL+"/resources/Logo-OST-PNG.png"} style={{ width: '10%' }} /></Navbar.Brand>
+                    <Navbar.Brand href={'Home'}><Link to="/"><Image src={process.env.PUBLIC_URL+"/resources/Logo-OST-PNG.png"} style={{ width: '10%' }} /></Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link href={'Home'}>Inicio</Nav.Link>
+                            <Nav.Link><Link style={{color:"white", textDecoration:"none"}} to="/">Inicio</Link></Nav.Link>
                             <NavDropdown title="Acerca de" id="basic-nav-dropdown">
-                                <NavDropdown.Item href={'SobreNosotros'}>Nosotros</NavDropdown.Item>
-                                <NavDropdown.Item href={'Clientes'}>Clientes</NavDropdown.Item>
+                                <NavDropdown.Item><Link style={{color:"black", textDecoration:"none"}} to="/SobreNosotros">Nosotros</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link style={{color:"black", textDecoration:"none"}} to="/Clientes">Clientes</Link></NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href={'Servicios'}>Servicios</Nav.Link>
-                            <Nav.Link href={'Contactos'}>Contactos</Nav.Link>
+                            <Nav.Link><Link style={{color:"white", textDecoration:"none"}} to="/Servicios">Servicios</Link></Nav.Link>
+                            <Nav.Link><Link style={{color:"white", textDecoration:"none"}} to="/Contactos">Contactos</Link></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </div>
@@ -53,7 +55,7 @@ const NavbarOSTOficial = () => {
                     <Carousel.Caption>
                         <Bounce left><h3 style={{ color: '' }} className="animated bounceInLeft">Instalaciones Electromecánica</h3></Bounce>
 
-                        <Bounce rigth><p><a href={'Contactos'}>Contacto</a></p></Bounce>
+                        <Bounce rigth><p><Link style={{textTransform:"uppercase",backgroundColor:"#262626",padding:10,display:"inline-block",color:"#fff",marginTop:15,textDecoration:"none"}} to="/Contactos">Contacto</Link></p></Bounce>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>

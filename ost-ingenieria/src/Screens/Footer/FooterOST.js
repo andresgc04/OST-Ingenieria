@@ -1,5 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
+import {Link} from 'react-router-dom';
 
 
 const FooterOST = () => {
@@ -10,16 +11,16 @@ const FooterOST = () => {
                 <div className="container mt-5">
 
                     <nav className="row">
-                        <a href={'Home'} className="col-md-3 text-reset text-uppercase d-flex align-items-center">
+                        <Link className="col-md-3 text-reset text-uppercase d-flex align-items-center" to="/">
                             <img src={process.env.PUBLIC_URL+'/resources/Logo-OST-PNG.png'} alt="Logo OST Ingenieria" className="img-logo" style={{ width: '60%' }} />
-                        </a>
+                        </Link>
                         <ul className="col-md-3 list-unstyled">
                             <li className="font-weight-bold text-uppercase">Menú</li>
-                            <li><a href={"Home"} className="text-reset">Inicio</a></li>
-                            <li><a href={"SobreNosotros"} className="text-reset">Equipo</a></li>
-                            <li><a href={"Clientes"} className="text-reset">Clientes</a></li>
-                            <li><a href={"Servicios"} className="text-reset">Servicios</a></li>
-                            <li><a href={"Contactos"} className="text-reset">Contactos</a></li>
+                            <li><Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/">Inicio</Link></li>
+                            <li><Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/SobreNosotros">Equipo</Link></li>
+                            <li><Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/Clientes">Clientes</Link></li>
+                            <li><Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/Servicios">Servicios</Link></li>
+                            <li><Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/Contactos">Contactos</Link></li>
 
                         </ul>
 

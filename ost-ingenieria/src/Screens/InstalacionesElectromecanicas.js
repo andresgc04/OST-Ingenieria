@@ -52,15 +52,15 @@ const InstalacionesElectromecanicas = () => {
                                         <Container className="mt-3">
                                             <Row>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/InstalacionesElectromecanicas.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/InstalacionesElectromecanicas.jpg"} rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/Instalaciones.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/Instalaciones.jpg"} rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/InstalacionesElectromecanicas2.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/InstalacionesElectromecanicas2.jpg"} rounded />
                                                 </Col>
                                             </Row>
                                         </Container>

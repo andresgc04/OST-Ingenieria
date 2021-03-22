@@ -5,6 +5,7 @@ import FooterOST from './Footer/FooterOST';
 import Pulse from 'react-reveal/Pulse';
 import { Helmet } from 'react-helmet';
 import Fade from 'react-reveal/Fade';
+import {Link} from 'react-router-dom';
 
 const TITLE = 'Servicios | OST Ingeniería'
 
@@ -30,17 +31,17 @@ const Servicios = () => {
 
                         <div className="col-md-6">
                             <div className="text-center">
-                                <a href={'InstalacionesElectromecanicas'} className="text-reset"><h1 className="display-4 mb-4 " style={{ fontSize: 24, color: 'red' }}>Instalaciones Electromecánicas</h1></a>
-                                <a href={'InstalacionesElectricasServices'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Instalaciones Eléctricas</p></a>
-                                <a href={'InstalacionesMecanicas'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Instalaciones Mecánicas</p></a>
-                                <a href={'SistemasDeDeteccionDeIncendios'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Sistemas de Detección de Incendios</p></a>
+                                <Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/InstalacionesElectromecanicas"><h1 className="display-4 mb-4 " style={{ fontSize: 24, color: 'red' }}>Instalaciones Electromecánicas</h1></Link>
+                                <Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/InstalacionesElectricasServices"><p className="display-4" style={{ fontSize: 18 }}>Instalaciones Eléctricas</p></Link>
+                                <Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/InstalacionesMecanicas"><p className="display-4" style={{ fontSize: 18 }}>Instalaciones Mecánicas</p></Link>
+                                <Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/SistemasDeDeteccionDeIncendios"><p className="display-4" style={{ fontSize: 18 }}>Sistemas de Detección de Incendios</p></Link>
                             </div>
                         </div>
 
                         <div className="col-md-5">
                             <div className="text-center">
-                                <a href={'Topografia'} className="text-reset"><h1 className="display-4 mb-4" style={{ fontSize: 24, color: 'red' }}>Topografía</h1></a>
-                                <a href={'Geolocalizacion'} className="text-reset"><p className="display-4" style={{ fontSize: 18 }}>Geolocalización</p></a>
+                                <Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/Topografia"><h1 className="display-4 mb-4" style={{ fontSize: 24, color: 'red' }}>Topografía</h1></Link>
+                                <Link className="text-reset" style={{color:"white",textDecoration:"none"}} to="/Geolocalizacion"><p className="display-4" style={{ fontSize: 18 }}>Geolocalización</p></Link>
                             </div>
                         </div>
 

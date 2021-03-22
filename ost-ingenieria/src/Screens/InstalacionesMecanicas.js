@@ -52,15 +52,15 @@ const InstalacionesMecanicas = () => {
                                         <Container className="mt-3">
                                             <Row>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/InstalacionesMecanicas.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/InstalacionesMecanicas.jpg"} rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/InstalacionesMecanicas2.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/InstalacionesMecanicas2.jpg"} rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src="/resources/mecanica.jpg" rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/mecanica.jpg"} rounded />
                                                 </Col>
                                             </Row>
                                         </Container>
