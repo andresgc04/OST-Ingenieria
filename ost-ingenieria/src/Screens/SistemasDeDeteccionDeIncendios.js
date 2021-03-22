@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet';
 
 const TITLE = 'Sistemas de Detección de Incendios | OST Ingeniería'
 
-const SistemasDeDeteccionDeIncendios = () => {
+const SistemasDeDeteccionDeIncendios = (props) => {
     return (
         <React.Fragment>
 
@@ -25,16 +25,16 @@ const SistemasDeDeteccionDeIncendios = () => {
                         <Row>
                             <Col sm={4}>
                                 <ListGroup>
-                                    <ListGroup.Item action href={'InstalacionesElectromecanicas'}>
-                                        Instalaciones Electromecanicas
+                                    <ListGroup.Item action onClick={()=>props.history.push("/InstalacionesElectromecanicas")}>
+                                        Instalaciones Electromecánicas
                                     </ListGroup.Item>
-                                    <ListGroup.Item action href={'InstalacionesElectricasServices'}>
-                                        Instalaciones Electricas
+                                    <ListGroup.Item action onClick={()=>props.history.push("/InstalacionesElectricasServices")}>
+                                        Instalaciones Eléctricas
                                     </ListGroup.Item>
-                                    <ListGroup.Item action href={'InstalacionesMecanicas'} >
-                                        Instalaciones Mecanicas
+                                    <ListGroup.Item action onClick={()=>props.history.push("/InstalacionesMecanicas")}>
+                                        Instalaciones Mecánicas
                                     </ListGroup.Item>
-                                    <ListGroup.Item action href={'SistemasDeDeteccionDeIncendios'}>
+                                    <ListGroup.Item active action onClick={()=>props.history.push("/SistemasDeDeteccionDeIncendios")}>
                                         Sistemas de Detección de Incendios
                                      </ListGroup.Item>
                                 </ListGroup>

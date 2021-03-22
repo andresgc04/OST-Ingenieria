@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet';
 
 const TITLE = 'Instalaciones Electricas | OST Ingeniería'
 
-const InstalacionesElectricasServices = () => {
+const InstalacionesElectricasServices = (props) => {
     return (
         <React.Fragment>
 
@@ -25,16 +25,16 @@ const InstalacionesElectricasServices = () => {
                         <Row>
                             <Col sm={4}>
                                 <ListGroup>
-                                    <ListGroup.Item action href={'InstalacionesElectromecanicas'}>
+                                    <ListGroup.Item action onClick={()=>props.history.push("/InstalacionesElectromecanicas")}>
                                         Instalaciones Electromecánicas
                                     </ListGroup.Item>
-                                    <ListGroup.Item action href={'InstalacionesElectricasServices'}>
+                                    <ListGroup.Item active action onClick={()=>props.history.push("/InstalacionesElectricasServices")}>
                                         Instalaciones Eléctricas
                                     </ListGroup.Item>
-                                    <ListGroup.Item action href={'InstalacionesMecanicas'} >
+                                    <ListGroup.Item action onClick={()=>props.history.push("/InstalacionesMecanicas")}>
                                         Instalaciones Mecánicas
                                     </ListGroup.Item>
-                                    <ListGroup.Item action href={'SistemasDeDeteccionDeIncendios'}>
+                                    <ListGroup.Item action onClick={()=>props.history.push("/SistemasDeDeteccionDeIncendios")}>
                                         Sistemas de Detección de Incendios
                                      </ListGroup.Item>
                                 </ListGroup>

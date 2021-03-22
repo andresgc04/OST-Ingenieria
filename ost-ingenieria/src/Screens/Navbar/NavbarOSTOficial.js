@@ -3,7 +3,6 @@ import { Navbar, Nav, NavDropdown, Carousel, Image } from 'react-bootstrap';
 import '../Navbar/NavbarOSTOficial.css';
 import Bounce from 'react-reveal/Bounce';
 import { Link } from "react-router-dom";
-import { LineStyle } from '@material-ui/icons';
 
 
 const NavbarOSTOficial = () => {
@@ -66,8 +65,6 @@ const NavbarOSTOficial = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3 style={{ color: 'black' }} ></h3>
-                        <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>

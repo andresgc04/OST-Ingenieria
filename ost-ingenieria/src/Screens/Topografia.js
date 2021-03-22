@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet';
 
 const TITLE = 'Topografía | OST Ingeniería'
 
-const Topografia = () => {
+const Topografia = (props) => {
     return (
         <React.Fragment>
 
@@ -25,10 +25,10 @@ const Topografia = () => {
                         <Row>
                             <Col sm={4}>
                                 <ListGroup>
-                                    <ListGroup.Item action href={'Topografia'}>
+                                    <ListGroup.Item active action onClick={()=>props.history.push("/Topografia")}>
                                         Topografía
                                     </ListGroup.Item>
-                                    <ListGroup.Item action href={'Geolocalizacion'} >
+                                    <ListGroup.Item action onClick={()=>props.history.push("/Geolocalizacion")}>
                                         Geolocalización
                                     </ListGroup.Item>
                                 </ListGroup>
