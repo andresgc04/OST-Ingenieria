@@ -1,6 +1,7 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
+
 const FooterOST = () => {
     return (
 
@@ -10,7 +11,7 @@ const FooterOST = () => {
 
                     <nav className="row">
                         <a href={'Home'} className="col-md-3 text-reset text-uppercase d-flex align-items-center">
-                            <img src="/resources/Logo-OST-PNG.png" alt="Logo OST Ingenieria" className="img-logo" style={{ width: '60%' }} />
+                            <img src={process.env.PUBLIC_URL+'/resources/Logo-OST-PNG.png'} alt="Logo OST Ingenieria" className="img-logo" style={{ width: '60%' }} />
                         </a>
                         <ul className="col-md-3 list-unstyled">
                             <li className="font-weight-bold text-uppercase">Menú</li>

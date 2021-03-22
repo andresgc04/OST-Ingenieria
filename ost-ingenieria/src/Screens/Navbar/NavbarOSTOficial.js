@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Navbar, Nav, NavDropdown, Carousel, Image } from 'react-bootstrap';
 import '../Navbar/NavbarOSTOficial.css';
 import Bounce from 'react-reveal/Bounce';
-import Slide from 'react-reveal/Slide';
 
 
 const NavbarOSTOficial = () => {
@@ -28,7 +27,7 @@ const NavbarOSTOficial = () => {
 
             <Navbar fixed="top" expand="lg" bg={navBackground ? 'dark' : 'transparent'} style={{ transition: '1s ease', }}>
                 <div className="container">
-                    <Navbar.Brand href={'Home'}><Image src="/resources/Logo-OST-PNG.png" style={{ width: '10%' }} /></Navbar.Brand>
+                    <Navbar.Brand href={'Home'}><Image src={process.env.PUBLIC_URL+"/resources/Logo-OST-PNG.png"} style={{ width: '10%' }} /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
@@ -48,7 +47,7 @@ const NavbarOSTOficial = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/resources/instalaciones.jpg"
+                        src={process.env.PUBLIC_URL+"/resources/instalaciones.jpg"}
                         alt="rascacielos"
                     />
                     <Carousel.Caption>
@@ -60,7 +59,7 @@ const NavbarOSTOficial = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/resources/paneles_II.jpg"
+                        src={process.env.PUBLIC_URL+"/resources/paneles_II.jpg"}
                         alt="Third slide"
                     />
 
@@ -72,7 +71,7 @@ const NavbarOSTOficial = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/resources/topografia1.jpg"
+                        src={process.env.PUBLIC_URL+"/resources/topografia1.jpg"}
                         alt="Third slide"
                     />
 

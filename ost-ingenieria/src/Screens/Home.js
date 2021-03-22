@@ -56,7 +56,7 @@ const Home = (props) => {
             <Fade right>
               <div className="col-md-6">
                 <div className="d-flex justify-content-center ml-5 mb-5">
-                  <Image src="/resources/ostnegro.png" style={{ width: '80%' }} />
+                  <Image src={process.env.PUBLIC_URL+"/resources/ostnegro.png"} style={{ width: '80%' }} />
                 </div>
               </div>
             </Fade>
@@ -80,7 +80,7 @@ const Home = (props) => {
                 <div className="col-md-6 mb-4">
                   <div className="card text-center shadow">
                     <div className="overflow">
-                      <img style={{ blockSize: 220 }} src="/resources/bombas1.jpg" alt="InstalacionesElectromecanicas" className="card-img-top" />
+                      <img style={{ blockSize: 220 }} src={process.env.PUBLIC_URL+"/resources/bombas1.jpg"} alt="InstalacionesElectromecanicas" className="card-img-top" />
                     </div>
                     <div className="card-body text-dark">
                       <h4 className="card-title">Instalaciones Electromecánicas</h4>
@@ -97,7 +97,7 @@ const Home = (props) => {
                 <div className="col-md-6">
                   <div className="card text-center shadow">
                     <div className="overflow">
-                      <img style={{ blockSize: 220 }} src="/resources/Topografia1.jpg" alt="Topografia" className="card-img-top" />
+                      <img style={{ blockSize: 220 }} src={process.env.PUBLIC_URL+"/resources/Topografia1.jpg"} alt="Topografia" className="card-img-top" />
                     </div>
                     <div className="card-body text-dark">
                       <h4 className="card-title">Topografía</h4>
@@ -124,7 +124,7 @@ const Home = (props) => {
             <Fade left>
               <div className="col-md-6">
                 <div>
-                  <Image src="/resources/mejores_soluciones.jpg" fluid style={{ height: 400, width: 820, borderRadius: 10 }} />
+                  <Image src={process.env.PUBLIC_URL+"/resources/mejores_soluciones.jpg"} fluid style={{ height: 400, width: 820, borderRadius: 10 }} />
                 </div>
               </div>
             </Fade>
@@ -165,31 +165,31 @@ const Home = (props) => {
         <div className="wrapper">
           <div className="sliderClient">
             <div className="slideClient">
-              <img src="/resources/MicrotekMedical.png" alt="MicrotekMedical" />
-              <img src="/resources/ParqueIndustrialDuarte.png" alt="ParqueIndustrialDuarte" />
-              <img src="/resources/SigmaPlast.png" alt="SigmaPlast" />
-              <img src="/resources/Inprotect.png" alt="Inprotect" />
-              <img src="/resources/AMYC.png" alt="AMYC" />
-              <img src="/resources/Metalmecanica.png" alt="Metalmecanica" />
-              <img src="/resources/MicrotekMedical.png" alt="MicrotekMedical" />
-              <img src="/resources/ParqueIndustrialDuarte.png" alt="ParqueIndustrialDuarte" />
-              <img src="/resources/SigmaPlast.png" alt="SigmaPlast" />
-              <img src="/resources/Inprotect.png" alt="Inprotect" />
-              <img src="/resources/AMYC.png" alt="AMYC" />
-              <img src="/resources/Metalmecanica.png" alt="Metalmecanica" />
-              <img src="/resources/MicrotekMedical.png" alt="MicrotekMedical" />
-              <img src="/resources/ParqueIndustrialDuarte.png" alt="ParqueIndustrialDuarte" />
-              <img src="/resources/SigmaPlast.png" alt="SigmaPlast" />
-              <img src="/resources/Inprotect.png" alt="Inprotect" />
-              <img src="/resources/AMYC.png" alt="AMYC" />
-              <img src="/resources/Metalmecanica.png" alt="Metalmecanica" />
-              <img src="/resources/MicrotekMedical.png" alt="MicrotekMedical" />
-              <img src="/resources/Metalmecanica.png" alt="Metalmecanica" />
-              <img src="/resources/ParqueIndustrialDuarte.png" alt="ParqueIndustrialDuarte" />
-              <img src="/resources/SigmaPlast.png" alt="SigmaPlast" />
-              <img src="/resources/Inprotect.png" alt="Inprotect" />
-              <img src="/resources/AMYC.png" alt="AMYC" />
-              <img src="/resources/Metalmecanica.png" alt="" />
+              <img src={process.env.PUBLIC_URL+"/resources/MicrotekMedical.png"} alt="MicrotekMedical" />
+              <img src={process.env.PUBLIC_URL+"/resources/ParqueIndustrialDuarte.png"} alt="ParqueIndustrialDuarte" />
+              <img src={process.env.PUBLIC_URL+"/resources/SigmaPlast.png"} alt="SigmaPlast" />
+              <img src={process.env.PUBLIC_URL+"/resources/Inprotect.png"} alt="Inprotect" />
+              <img src={process.env.PUBLIC_URL+"/resources/AMYC.png"} alt="AMYC" />
+              <img src={process.env.PUBLIC_URL+"/resources/Metalmecanica.png"} alt="Metalmecanica" />
+              <img src={process.env.PUBLIC_URL+"/resources/MicrotekMedical.png"} alt="MicrotekMedical" />
+              <img src={process.env.PUBLIC_URL+"/resources/ParqueIndustrialDuarte.png"} alt="ParqueIndustrialDuarte" />
+              <img src={process.env.PUBLIC_URL+"/resources/SigmaPlast.png"} alt="SigmaPlast" />
+              <img src={process.env.PUBLIC_URL+"/resources/Inprotect.png"} alt="Inprotect" />
+              <img src={process.env.PUBLIC_URL+"/resources/AMYC.png"} alt="AMYC" />
+              <img src={process.env.PUBLIC_URL+"/resources/Metalmecanica.png"} alt="Metalmecanica" />
+              <img src={process.env.PUBLIC_URL+"/resources/MicrotekMedical.png"} alt="MicrotekMedical" />
+              <img src={process.env.PUBLIC_URL+"/resources/ParqueIndustrialDuarte.png"} alt="ParqueIndustrialDuarte" />
+              <img src={process.env.PUBLIC_URL+"/resources/SigmaPlast.png"} alt="SigmaPlast" />
+              <img src={process.env.PUBLIC_URL+"/resources/Inprotect.png"} alt="Inprotect" />
+              <img src={process.env.PUBLIC_URL+"/resources/AMYC.png"} alt="AMYC" />
+              <img src={process.env.PUBLIC_URL+"/resources/Metalmecanica.png"} alt="Metalmecanica" />
+              <img src={process.env.PUBLIC_URL+"/resources/MicrotekMedical.png"} alt="MicrotekMedical" />
+              <img src={process.env.PUBLIC_URL+"/resources/Metalmecanica.png"} alt="Metalmecanica" />
+              <img src={process.env.PUBLIC_URL+"/resources/ParqueIndustrialDuarte.png"} alt="ParqueIndustrialDuarte" />
+              <img src={process.env.PUBLIC_URL+"/resources/SigmaPlast.png"} alt="SigmaPlast" />
+              <img src={process.env.PUBLIC_URL+"/resources/Inprotect.png"} alt="Inprotect" />
+              <img src={process.env.PUBLIC_URL+"/resources/AMYC.png"} alt="AMYC" />
+              <img src={process.env.PUBLIC_URL+"/resources/Metalmecanica.png"} alt="" />
             </div>
           </div>
         </div>
