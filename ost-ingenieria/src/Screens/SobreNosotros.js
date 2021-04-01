@@ -145,7 +145,7 @@ const SobreNosotros = () => {
 
                         <div className="col-md-6 ml-5 justify-content-between h-100 col-sm-8 align-self-center text-center col-lg-6">
                             <div>
-                                <Image style={{ height: 118, width: 119 }} src={process.env.PUBLIC_URL+"/resources/yancarlitos.jpg"} roundedCircle />
+                                <Image style={{ height: 118, width: 119 }} src={process.env.PUBLIC_URL+"/resources/yancarlitos.JPG"} roundedCircle />
                             </div>
 
                             <div>

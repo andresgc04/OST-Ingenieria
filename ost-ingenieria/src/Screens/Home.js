@@ -170,26 +170,26 @@ const Home = (props) => {
               <img src={process.env.PUBLIC_URL+"/resources/SigmaPlast.png"} alt="SigmaPlast" />
               <img src={process.env.PUBLIC_URL+"/resources/Inprotect.png"} alt="Inprotect" />
               <img src={process.env.PUBLIC_URL+"/resources/AMYC.png"} alt="AMYC" />
-              <img src={process.env.PUBLIC_URL+"/resources/Metalmecanica.png"} alt="Metalmecanica" />
+              <img src={process.env.PUBLIC_URL+"/resources/metalmecanica.png"} alt="Metalmecanica" />
               <img src={process.env.PUBLIC_URL+"/resources/MicrotekMedical.png"} alt="MicrotekMedical" />
               <img src={process.env.PUBLIC_URL+"/resources/ParqueIndustrialDuarte.png"} alt="ParqueIndustrialDuarte" />
               <img src={process.env.PUBLIC_URL+"/resources/SigmaPlast.png"} alt="SigmaPlast" />
               <img src={process.env.PUBLIC_URL+"/resources/Inprotect.png"} alt="Inprotect" />
               <img src={process.env.PUBLIC_URL+"/resources/AMYC.png"} alt="AMYC" />
-              <img src={process.env.PUBLIC_URL+"/resources/Metalmecanica.png"} alt="Metalmecanica" />
+              <img src={process.env.PUBLIC_URL+"/resources/metalmecanica.png"} alt="Metalmecanica" />
               <img src={process.env.PUBLIC_URL+"/resources/MicrotekMedical.png"} alt="MicrotekMedical" />
               <img src={process.env.PUBLIC_URL+"/resources/ParqueIndustrialDuarte.png"} alt="ParqueIndustrialDuarte" />
               <img src={process.env.PUBLIC_URL+"/resources/SigmaPlast.png"} alt="SigmaPlast" />
               <img src={process.env.PUBLIC_URL+"/resources/Inprotect.png"} alt="Inprotect" />
               <img src={process.env.PUBLIC_URL+"/resources/AMYC.png"} alt="AMYC" />
-              <img src={process.env.PUBLIC_URL+"/resources/Metalmecanica.png"} alt="Metalmecanica" />
+              <img src={process.env.PUBLIC_URL+"/resources/metalmecanica.png"} alt="Metalmecanica" />
               <img src={process.env.PUBLIC_URL+"/resources/MicrotekMedical.png"} alt="MicrotekMedical" />
-              <img src={process.env.PUBLIC_URL+"/resources/Metalmecanica.png"} alt="Metalmecanica" />
+              <img src={process.env.PUBLIC_URL+"/resources/metalmecanica.png"} alt="Metalmecanica" />
               <img src={process.env.PUBLIC_URL+"/resources/ParqueIndustrialDuarte.png"} alt="ParqueIndustrialDuarte" />
               <img src={process.env.PUBLIC_URL+"/resources/SigmaPlast.png"} alt="SigmaPlast" />
               <img src={process.env.PUBLIC_URL+"/resources/Inprotect.png"} alt="Inprotect" />
               <img src={process.env.PUBLIC_URL+"/resources/AMYC.png"} alt="AMYC" />
-              <img src={process.env.PUBLIC_URL+"/resources/Metalmecanica.png"} alt="" />
+              <img src={process.env.PUBLIC_URL+"/resources/metalmecanica.png"} alt="Metalmecanica" />
             </div>
           </div>
         </div>

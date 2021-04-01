@@ -70,7 +70,7 @@ const NavbarOSTOficial = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={process.env.PUBLIC_URL+"/resources/topografia1.jpg"}
+                        src={process.env.PUBLIC_URL+"/resources/Topografia1.jpg"}
                         alt="Third slide"
                     />
 

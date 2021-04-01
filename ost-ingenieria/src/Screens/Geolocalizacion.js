@@ -53,7 +53,7 @@ const Geolocalizacion = (props) => {
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/Geolocalizacion4.jpg"} rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/geolocalizacion4.jpg"} rounded />
                                                 </Col>
                                             </Row>
                                         </Container>

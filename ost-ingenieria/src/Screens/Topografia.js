@@ -45,7 +45,7 @@ const Topografia = (props) => {
                                         <Container className="mt-3">
                                             <Row>
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/Topografia5.jpg"} rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/topografia5.jpg"} rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
@@ -53,7 +53,7 @@ const Topografia = (props) => {
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/Topografia4.jpg"} rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/topografia4.jpg"} rounded />
                                                 </Col>
                                             </Row>
                                         </Container>

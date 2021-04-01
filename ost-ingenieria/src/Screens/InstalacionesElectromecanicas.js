@@ -56,7 +56,7 @@ const InstalacionesElectromecanicas = (props) => {
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
-                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/Instalaciones.jpg"} rounded />
+                                                    <Image style={{ width: '100%', height: '100%' }} src={process.env.PUBLIC_URL+"/resources/instalaciones.jpg"} rounded />
                                                 </Col>
 
                                                 <Col xs={5} md={4}>
