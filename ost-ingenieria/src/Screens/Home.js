@@ -18,7 +18,7 @@ const Home = (props) => {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_zwncyjk', 'template_vfg56nc', e.target, 'user_6q85fkNk4vz9KFR6KmOuw')
+    emailjs.sendForm('service_1g2u8vl', 'template_u0v7295', e.target, 'user_ck2nom3RwoVbBddoibZfN')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -206,6 +206,9 @@ const Home = (props) => {
                 </div>
                 <div className="mt-5 mr-5">
                   <Form onSubmit={sendEmail}>
+                    <Form.Group controlId="exampleForm.ControlInput1">
+                      <Form.Control hidden type="text" placeholder="OST Ingenieria" name="to_name" value="OST Ingenieria" />
+                    </Form.Group>
                     <Form.Group controlId="exampleForm.ControlInput1">
                       <Form.Label>Nombre completo:</Form.Label>
                       <Form.Control type="text" placeholder="nombre completo" name="name" />

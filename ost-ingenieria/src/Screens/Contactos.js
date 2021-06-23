@@ -47,7 +47,7 @@ const Contactos = () => {
                                 <div className="mt-5 mr-5">
                                     <Form onSubmit={sendEmail}>
                                          <Form.Group controlId="exampleForm.ControlInput1">
-                                            <Form.Control hidden type="text" placeholder="Nombre Completo" name="to_name" value="OST Ingenieria" />
+                                            <Form.Control hidden type="text" placeholder="OST Ingenieria" name="to_name" value="OST Ingenieria" />
                                         </Form.Group>
                                         <Form.Group controlId="exampleForm.ControlInput1">
                                             <Form.Label>Nombre Completo:</Form.Label>
